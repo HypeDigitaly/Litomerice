@@ -8,6 +8,7 @@
   color: transparent !important;
   position: relative !important;
 }
+
 #vfrc-start-chat::before,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before {
   content: "Začít nový chat" !important;
@@ -22,6 +23,7 @@
   font-family: Arial, sans-serif !important;
   font-size: 16px !important;
 }
+
 /* Cancel translation */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
   background-color: #f5f5f5 !important;
@@ -30,6 +32,7 @@
   color: transparent !important;
   position: relative !important;
 }
+
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4::before {
   content: "Zavřít" !important;
   position: absolute !important;
@@ -52,19 +55,67 @@
   box-shadow: none !important;
 }
 
+/* Button container - default state (when closed) */
+.vfrc-launcher.ojsd7i1 {
+  width: 168px !important;
+  height: 168px !important;
+  transition: none !important;
+  animation: none !important;
+  background: transparent !important;
+}
+
+/* SVG container sizing */
+.ojsd7i6.ojsd7i7 svg {
+  width: 168px !important;
+  height: 168px !important;
+}
+
+/* Only apply transparent background when launcher is closed (image is visible) */
+.vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig) {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Remove hover effects */
+.vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig):hover {
+  transform: none !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+
+/* The actual image within the launcher */
+.ojsd7it.ojsd7iv.ojsd7ig,
+img[alt="open chat"] {
+  width: 168px !important;
+  height: 168px !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Ensure parent containers don't restrict size */
+.ojsd7i6.ojsd7i7,
+.ojsd7i0 {
+  width: 168px !important;
+  height: 168px !important;
+}
+
 /* Message text alignment */
 .vfrc-message {
   text-align: left !important;
   justify-content: flex-start !important;
 }
+
 .vfrc-message > * {
   text-align: left !important;
   margin-left: 0 !important;
 }
+
 .vfrc-message div {
   justify-content: flex-start !important;
   align-items: flex-start !important;
 }
+
 /* Chat ended text */
 ._1o69oyc2 {
   color: transparent !important;
@@ -72,6 +123,7 @@
   text-align: center !important;
   width: 100% !important;
 }
+
 ._1o69oyc2::before {
   content: "Chat byl ukončen" !important;
   position: absolute !important;

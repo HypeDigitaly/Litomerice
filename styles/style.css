@@ -63,8 +63,8 @@
 
 /* Button container - default state (when closed) */
 .vfrc-launcher.ojsd7i1 {
-  width: 56px !important;
-  height: 56px !important;
+  width: 70px !important;
+  height: 70px !important;
   transition: transform 0.2s ease !important;
   bottom: 20px !important;
   right: 20px !important;
@@ -85,8 +85,8 @@
 /* Ensure the image container has proper padding */
 .ojsd7i6.ojsd7i7 {
   padding: 0 !important;
-  width: 48px !important;
-  height: 48px !important;
+  width: 60px !important;
+  height: 60px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -107,8 +107,8 @@
 /* The actual image within the launcher */
 .ojsd7it.ojsd7iv.ojsd7ig,
 img[alt="open chat"] {
-  width: 48px !important;
-  height: 48px !important;
+  width: 60px !important;
+  height: 60px !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
@@ -120,8 +120,8 @@ img[alt="open chat"] {
 /* Ensure parent containers don't restrict size */
 .ojsd7i6.ojsd7i7,
 .ojsd7i0 {
-  width: 48px !important;
-  height: 48px !important;
+  width: 60px !important;
+  height: 60px !important;
 }
 
 /* Styles for opened state - adjusted positioning */

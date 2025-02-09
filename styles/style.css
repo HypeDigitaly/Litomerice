@@ -57,17 +57,18 @@
 
 /* Button container - default state (when closed) */
 .vfrc-launcher.ojsd7i1 {
-  width: 168px !important;
-  height: 168px !important;
-  transition: none !important;
-  animation: none !important;
-  background: transparent !important;
+  width: 64px !important;
+  height: 64px !important;
+  transition: transform 0.2s ease !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  position: fixed !important;
 }
 
 /* SVG container sizing */
 .ojsd7i6.ojsd7i7 svg {
-  width: 168px !important;
-  height: 168px !important;
+  width: 32px !important;
+  height: 32px !important;
 }
 
 /* Only apply transparent background when launcher is closed (image is visible) */
@@ -76,18 +77,17 @@
   border: none !important;
 }
 
-/* Remove hover effects */
+/* Restore hover effects */
 .vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig):hover {
-  transform: none !important;
-  opacity: 1 !important;
-  background-color: transparent !important;
+  transform: scale(1.1) !important;
+  transition: transform 0.2s ease !important;
 }
 
 /* The actual image within the launcher */
 .ojsd7it.ojsd7iv.ojsd7ig,
 img[alt="open chat"] {
-  width: 168px !important;
-  height: 168px !important;
+  width: 64px !important;
+  height: 64px !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
@@ -96,8 +96,20 @@ img[alt="open chat"] {
 /* Ensure parent containers don't restrict size */
 .ojsd7i6.ojsd7i7,
 .ojsd7i0 {
-  width: 168px !important;
-  height: 168px !important;
+  width: 64px !important;
+  height: 64px !important;
+}
+
+/* Styles for opened state */
+.vfrc-launcher.ojsd7i1:not(:has(.ojsd7it.ojsd7iv.ojsd7ig)) {
+  width: 42px !important;
+  height: 42px !important;
+  background-color: #264EB4 !important;
+  border-radius: 9999px !important;
+  margin-right: -10px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transform: none !important;
 }
 
 /* Message text alignment */

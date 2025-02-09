@@ -73,9 +73,17 @@
 
 /* SVG container sizing - adjusted to prevent cropping */
 .ojsd7i6.ojsd7i7 svg {
-  width: 64px !important;
-  height: 64px !important;
-  viewBox: "0 0 64 64" !important;
+  width: 16px !important;
+  height: 16px !important;
+  viewBox: "0 0 24 24" !important;
+}
+
+/* Ensure the image container has proper padding */
+.ojsd7i6.ojsd7i7 {
+  padding: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* Only apply transparent background when launcher is closed (image is visible) */

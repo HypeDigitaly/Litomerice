@@ -55,6 +55,12 @@
   box-shadow: none !important;
 }
 
+/* Widget positioning adjustment */
+._1emja3f9 {
+  bottom: 84px !important;
+  right: 20px !important;
+}
+
 /* Button container - default state (when closed) */
 .vfrc-launcher.ojsd7i1 {
   width: 64px !important;
@@ -65,10 +71,11 @@
   position: fixed !important;
 }
 
-/* SVG container sizing */
+/* SVG container sizing - adjusted to prevent cropping */
 .ojsd7i6.ojsd7i7 svg {
-  width: 32px !important;
-  height: 32px !important;
+  width: 64px !important;
+  height: 64px !important;
+  viewBox: "0 0 64 64" !important;
 }
 
 /* Only apply transparent background when launcher is closed (image is visible) */
@@ -91,6 +98,7 @@ img[alt="open chat"] {
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
+  object-fit: contain !important;
 }
 
 /* Ensure parent containers don't restrict size */
@@ -100,16 +108,18 @@ img[alt="open chat"] {
   height: 64px !important;
 }
 
-/* Styles for opened state */
+/* Styles for opened state - adjusted positioning */
 .vfrc-launcher.ojsd7i1:not(:has(.ojsd7it.ojsd7iv.ojsd7ig)) {
   width: 42px !important;
   height: 42px !important;
   background-color: #264EB4 !important;
   border-radius: 9999px !important;
-  margin-right: -10px !important;
-  position: relative !important;
-  overflow: hidden !important;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  margin: 0 !important;
   transform: none !important;
+  z-index: 1 !important;
 }
 
 /* Message text alignment */

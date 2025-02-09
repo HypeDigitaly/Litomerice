@@ -1,7 +1,17 @@
 /* Main container positioning */
 ._1emja3f9 {
-  bottom: 30px !important;
-  right: 30px !important;
+  bottom: 84px !important;  /* Increased to create space for launcher */
+  right: 20px !important;
+}
+
+/* Widget container */
+.vfrc-widget._1emja3f0._1emja3f1 {
+  background-color: #264EB4 !important;
+}
+
+/* Header background */
+.vfrc-header._1q5q0m12 {
+  background-color: #264EB4 !important;
 }
 
 /* Button container - default state (when closed) */
@@ -10,6 +20,9 @@
   height: 84px !important;
   transition: none !important;
   animation: none !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  position: fixed !important;
 }
 
 /* Only apply transparent background when launcher is closed (image is visible) */
@@ -38,7 +51,7 @@
 .vfrc-launcher.ojsd7i1:not(:has(.ojsd7it.ojsd7iu.ojsd7ig)) {
   width: 42px !important;
   height: 42px !important;
-  background-color: #6EBC43 !important;
+  background-color: #264EB4 !important;
   border-radius: 9999px !important;
   margin-right: -10px !important;
   position: relative !important;
@@ -52,7 +65,7 @@
 /* Start new chat translation */
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
-  background-color: #6EBC43 !important;
+  background-color: #264EB4 !important;
   border-radius: 4px !important;
   padding: 10px 20px !important;
   color: transparent !important;
@@ -89,7 +102,7 @@
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #666 !important;
+  color: #264EB4 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -127,7 +140,7 @@
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #666666 !important;
+  color: #264EB4 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;

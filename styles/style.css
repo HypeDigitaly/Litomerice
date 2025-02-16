@@ -319,30 +319,29 @@ img[alt="open chat"] {
 /* Base state for input container - static grey border */
 .vfrc-input-container_1kk1h6j1,
 div[class*="vfrc-input-container"],
-._1kk1h6j1 {
+._1kk1h6j1,
+.vfrc-input-container_1kk1h6j1:hover,
+div[class*="vfrc-input-container"]:hover,
+._1kk1h6j1:hover {
   border: 1px solid #e5e7eb !important;
   border-radius: 24px !important;
   outline: none !important;
   box-shadow: none !important;
   background-color: #FFFFFF !important;
-  transition: border 0.2s ease-in-out !important;
 }
 
-/* Focus state - replace grey with blue border */
+/* Focus state - ONLY blue border */
 .vfrc-input-container_1kk1h6j1:focus-within,
 div[class*="vfrc-input-container"]:focus-within,
-._1kk1h6j1:focus-within {
+._1kk1h6j1:focus-within,
+.vfrc-input-container_1kk1h6j1:focus-within:hover,
+div[class*="vfrc-input-container"]:focus-within:hover,
+._1kk1h6j1:focus-within:hover {
   border: 2px solid #173271 !important;
+  border-radius: 24px !important;
   outline: none !important;
   box-shadow: none !important;
   background-color: #FFFFFF !important;
-}
-
-/* No hover effects */
-.vfrc-input-container_1kk1h6j1:hover,
-div[class*="vfrc-input-container"]:hover,
-._1kk1h6j1:hover {
-  border: 1px solid #e5e7eb !important;
 }
 
 .vfrc-input-container_1kk1h6j1:hover,

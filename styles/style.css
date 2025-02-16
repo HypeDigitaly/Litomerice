@@ -9,6 +9,13 @@
   position: relative !important;
 }
 
+/* VFRC Title color styling */
+.vfrc-header-title_1q5q0m14,
+.vfrc-header .vfrc-header-title {
+  color: #173271 !important;
+  font-family: Arial, sans-serif !important;
+}
+
 #vfrc-start-chat::before,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before {
   content: "Začít nový chat" !important;

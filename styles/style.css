@@ -44,16 +44,6 @@ div[class*="vfrc-header--title"] {
 
 /* Specific SVG styling for header button */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  width: 28px !important;
-  height: 28px !important;
-}
-
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 {
   background-color: #b98004 !important;
   border-radius: 50% !important;
   width: 28px !important;
@@ -62,6 +52,16 @@ div[class*="vfrc-header--title"] {
   align-items: center !important;
   justify-content: center !important;
   overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 {
+  width: 28px !important;
+  height: 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -71,11 +71,6 @@ div[class*="vfrc-header--title"] {
   height: 24px !important;
   min-width: 24px !important;
   min-height: 24px !important;
-  display: block !important;
-  position: relative !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
 }
 
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 path {

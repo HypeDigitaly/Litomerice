@@ -24,6 +24,7 @@ div[class*="vfrc-header--title"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  background-color: #b98004 !important;
   border-radius: 50% !important;
   width: 24px !important;
   height: 24px !important;
@@ -37,7 +38,7 @@ div[class*="vfrc-header--title"] {
 }
 
 .vfrc-icon._141dsik0 path {
-  fill: #656d75 !important;
+  fill: white !important;
   stroke: none !important;
   transform-origin: center !important;
 }

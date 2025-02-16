@@ -183,10 +183,11 @@ button[variant="inline"].vfrc-button._1ytjivy0 * {
   box-shadow: none !important;
 }
 
-/* Widget positioning */
+/* Widget positioning and border */
 ._1emja3f9 {
   bottom: 84px !important;
   right: 20px !important;
+  border: 1px solid #b98004 !important;
 }
 
 /* Launcher styling - closed state */

@@ -43,10 +43,20 @@ div[class*="vfrc-header--title"] {
 }
 
 /* Specific SVG styling for header button */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 svg {
-  fill: white !important;
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 {
   background-color: #b98004 !important;
-  border-radius: 4px !important;
+  border-radius: 50% !important;
+  padding: 2px !important;
+}
+
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 path {
+  fill: white !important;
+  stroke: none !important;
 }
 
 div[class*="vfrc-icon"] {

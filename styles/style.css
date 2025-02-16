@@ -229,18 +229,7 @@ img[alt="open chat"] {
   color: #FFFFFF !important; /* White text/icon */
 }
 
-/* SVG container sizing - adjusted to prevent cropping */
-.ojsd7i6.ojsd7i7 svg {
-  width: 24px !important;
-  height: 24px !important;
-  viewBox: "0 0 24 24" !important;
-  stroke-width: 2.5px !important;
-  stroke: white !important; /* Add this line to make the SVG white */
-  fill: white !important; /* Add this line to make the SVG white */
-}
-
-/* Additionally, ensure any paths within the SVG are also white */
-.ojsd7i6.ojsd7i7 svg path {
-  stroke: white !important;
-  fill: white !important;
+/* New whitening amendment */
+.kbc55z4 {
+  color: white !important;
 }

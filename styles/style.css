@@ -117,7 +117,7 @@ button[variant="inline"].vfrc-button._1ytjivy0,
 button[class*="vfrc-button"][variant="inline"] {
   background-color: #FFFFFF !important;
   border: 1px solid #b98004 !important;
-  color: #000000 !important;
+  color: #173271 !important;
   padding: 8px 16px !important;
   border-radius: 8px !important;
   cursor: pointer !important;
@@ -145,11 +145,11 @@ button[class*="vfrc-button"][variant="inline"]:hover {
   transition: background-color 0.2s ease !important;
 }
 
-/* Ensure text color remains black */
+/* Ensure text color remains blue */
 .vfrc-system-response--actions_1ddzqsn5 button *,
 div[class*="vfrc-system-response--actions"] button *,
 button[variant="inline"].vfrc-button._1ytjivy0 * {
-  color: #000000 !important;
+  color: #173271 !important;
 }
 
 /* Cancel translation button */

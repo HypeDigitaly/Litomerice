@@ -2,11 +2,20 @@
 /* Start new chat translation */
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
-  background-color: #264EB4 !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #b98004 !important;
   border-radius: 4px !important;
   padding: 10px 20px !important;
   color: transparent !important;
   position: relative !important;
+}
+
+/* Header background color update */
+.vfrc-header._1q5q0m12,
+div[class*="vfrc-header"],
+._1q5q0m12,
+div[class*="_1q5q0m12"] {
+  background-color: #FFFFFF !important;
 }
 
 /* VFRC Title color styling - corrected selector */
@@ -93,7 +102,7 @@ div[class*="vfrc-icon"] {
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: white !important;
+  color: #b98004 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -101,9 +110,31 @@ div[class*="vfrc-icon"] {
   font-size: 16px !important;
 }
 
+/* System response buttons and action buttons */
+.vfrc-system-response-actions button,
+.vfrc-button,
+button[class*="vfrc-button"],
+div[class*="_19kum4t1"],
+.button.vfrc-button._1ytjiyv0._17qb7gk0._1ytjiyv1 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #b98004 !important;
+  color: #b98004 !important;
+}
+
+/* Hover state for buttons */
+.vfrc-system-response-actions button:hover,
+.vfrc-button:hover,
+button[class*="vfrc-button"]:hover,
+div[class*="_19kum4t1"]:hover,
+.button.vfrc-button._1ytjiyv0._17qb7gk0._1ytjiyv1:hover {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #b98004 !important;
+}
+
 /* Cancel translation */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
-  background-color: #f5f5f5 !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #b98004 !important;
   border-radius: 4px !important;
   padding: 10px 20px !important;
   color: transparent !important;
@@ -116,7 +147,7 @@ div[class*="vfrc-icon"] {
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #264EB4 !important;
+  color: #b98004 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -260,23 +291,11 @@ img[alt="open chat"] {
 
 /* Send button */
 #vfrc-send-message {
-  background-color: #b98004 !important; /* Brand okrová */
-  color: #FFFFFF !important; /* White text/icon */
+  background-color: #b98004 !important;
+  color: #FFFFFF !important;
 }
 
 /* New whitening amendment */
 .kbc55z4 {
   color: white !important;
-}
-
-/* Header background color update */
-.vfrc-header._1q5q0m12,
-div[class*="vfrc-header"] {
-  background-color: #FFFFFF !important;
-}
-
-/* Ensuring the change applies to all possible header class combinations */
-._1q5q0m12,
-div[class*="_1q5q0m12"] {
-  background-color: #FFFFFF !important;
 }

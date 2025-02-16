@@ -108,10 +108,12 @@ div[class*="vfrc-icon"] {
 }
 
 /* Updated Language selection buttons styling */
-.vfrc-system-response-actions button,
-div[class*="_19kum4t1"],
-.vfrc-system-response-sel button,
-div[class*="vfrc-system-response-sel"] button {
+.vfrc-system-response--actions_1ddzqsn5 button,
+div[class*="vfrc-system-response--actions"] button,
+button[variant="inline"].vfrc-button._1ytjivy0,
+.vfrc-system-response--actions button,
+._19eum4t1 button,
+button[class*="vfrc-button"][variant="inline"] {
   background-color: #FFFFFF !important;
   border: 1px solid #b98004 !important;
   color: #000000 !important;
@@ -127,6 +129,23 @@ div[class*="vfrc-system-response-sel"] button {
   text-align: center !important;
   white-space: nowrap !important;
   min-width: 80px !important;
+  box-shadow: none !important;
+}
+
+/* Additional button state styling */
+.vfrc-system-response--actions_1ddzqsn5 button:hover,
+div[class*="vfrc-system-response--actions"] button:hover,
+button[variant="inline"].vfrc-button._1ytjivy0:hover {
+  background-color: #FFFFFF !important;
+  border-color: #b98004 !important;
+  opacity: 0.9 !important;
+}
+
+/* Ensure text color remains black */
+.vfrc-system-response--actions_1ddzqsn5 button *,
+div[class*="vfrc-system-response--actions"] button *,
+button[variant="inline"].vfrc-button._1ytjivy0 * {
+  color: #000000 !important;
 }
 
 /* Cancel translation button */

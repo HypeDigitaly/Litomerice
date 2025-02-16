@@ -19,26 +19,13 @@ div[class*="vfrc-header--title"] {
   color: #173271 !important;
 }
 
-/* Send button styling */
-button[class*="vfrc-button"][class*="kbc5520"],
-button[id="vfrc-send-message"] {
+/* SVG icon styling */
+.vfrc-icon._141dsik0 {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   background-color: #b98004 !important;
   border-radius: 50% !important;
-  width: 32px !important;
-  height: 32px !important;
-  padding: 4px !important;
-  border: none !important;
-}
-
-/* Remove background from microphone icon */
-.vfrc-icon._141dsik0 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: transparent !important;
   width: 24px !important;
   height: 24px !important;
 }

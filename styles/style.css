@@ -1,5 +1,10 @@
 /* Translation overlay styles - updated approach */
 /* Start new chat translation */
+.vfrc-widget,
+div[class*="vfrc-widget"] {
+  border: 1px solid #b98004 !important;
+}
+
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
   background-color: #173271 !important;

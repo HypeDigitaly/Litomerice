@@ -25,13 +25,13 @@ div[class*="vfrc-header--title"] {
   align-items: center !important;
   justify-content: center !important;
   border-radius: 50% !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 32px !important;
+  height: 32px !important;
 }
 
 .vfrc-icon._141dsik0 svg {
-  width: 24px !important;
-  height: 24px !important;
+  width: 32px !important;
+  height: 32px !important;
   fill: none !important;
   transform: scale(0.85) !important; /* Scaling down the SVG slightly */
 }

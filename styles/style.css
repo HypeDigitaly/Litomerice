@@ -1,14 +1,21 @@
-/* Updated LitoBot Chat Interface Styles */
+/* LitoBot Chat Interface Styles with Brand Colors */
+/* Brand Colors:
+   - Blue: #173271 (Primary blue for backgrounds)
+   - Ochre: #b98004 (Icons on white, button borders)
+   - White: #FFFFFF (Text on blue backgrounds)
+   - Black: #000000 (Text on white backgrounds)
+*/
 
 /* Primary button styles */
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
-  background-color: #D4A017 !important; /* Updated to gold color from image */
-  border-radius: 8px !important; /* Increased border radius to match design */
+  background-color: #173271 !important; /* Brand blue */
+  border-radius: 8px !important;
   padding: 12px 24px !important;
   color: transparent !important;
   position: relative !important;
   transition: transform 0.2s ease !important;
+  border: 2px solid #b98004 !important; /* Ochre border */
 }
 
 #vfrc-start-chat::before,
@@ -18,7 +25,7 @@
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #FFFFFF !important;
+  color: #FFFFFF !important; /* White text on blue background */
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -29,12 +36,12 @@
 
 /* Cancel button styles */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
-  background-color: #f8f9fa !important; /* Lighter background */
+  background-color: #FFFFFF !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
   color: transparent !important;
   position: relative !important;
-  border: 1px solid #e9ecef !important;
+  border: 2px solid #b98004 !important; /* Ochre border */
 }
 
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4::before {
@@ -43,7 +50,7 @@
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #495057 !important; /* Darker text color */
+  color: #173271 !important; /* Brand blue text */
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -54,77 +61,89 @@
 /* Chat widget container */
 .vfrc-widget._1emja3f0._1emja3f1 {
   border-radius: 12px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 12px rgba(23, 50, 113, 0.1) !important; /* Brand blue shadow */
 }
 
 /* Chat header */
 .vfrc-header._1q5q0m12 {
-  background-color: #FFFFFF !important;
-  border-bottom: 1px solid #e9ecef !important;
+  background-color: #173271 !important; /* Brand blue */
   padding: 16px !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
 }
 
-/* Avatar styles */
-.vfrc-avatar.wfg6590.wfg6591,
-.vfrc-avatar.wfg6590.wfg6592 {
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 50% !important;
-  object-fit: contain !important;
+.vfrc-header--title._1q5q0m14 {
+  color: #FFFFFF !important; /* White text on blue background */
 }
 
-/* Chat launcher button */
-.vfrc-launcher.ojsd7i1 {
-  width: 60px !important;
-  height: 60px !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-}
-
-/* Chat input area */
-.vfrc-input-container._1kk1h6j1 {
-  background-color: #FFFFFF !important;
-  border-top: 1px solid #e9ecef !important;
-  padding: 12px 16px !important;
-}
-
-.vfrc-chat-input._1kk1h6j6 {
-  border: 1px solid #e9ecef !important;
-  border-radius: 8px !important;
-  padding: 12px !important;
-  font-family: 'Open Sans', Arial, sans-serif !important;
-  font-size: 14px !important;
-  resize: none !important;
-}
-
-/* Message bubbles */
-.vfrc-message._7rpfil0 {
-  background-color: #f8f9fa !important;
-  border-radius: 12px !important;
-  padding: 12px 16px !important;
-  margin: 8px 0 !important;
-}
-
-/* Footer text */
-._15oua041._15oua043 {
-  color: #6c757d !important;
-  font-size: 12px !important;
-  text-align: center !important;
-  padding: 8px !important;
+/* Icons */
+.vfrc-icon._141dsik0 svg path {
+  fill: #b98004 !important; /* Ochre icons */
 }
 
 /* Quick reply buttons */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy1 {
-  background-color: #f8f9fa !important;
-  border: 1px solid #e9ecef !important;
+  background-color: #FFFFFF !important;
+  border: 2px solid #b98004 !important; /* Ochre border */
   border-radius: 20px !important;
   padding: 8px 16px !important;
-  color: #495057 !important;
+  color: #173271 !important; /* Brand blue text */
   font-size: 14px !important;
   transition: all 0.2s ease !important;
 }
 
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy1:hover {
-  background-color: #e9ecef !important;
+  background-color: #173271 !important; /* Brand blue */
+  color: #FFFFFF !important; /* White text */
+}
+
+/* Message bubbles */
+.vfrc-message._7rpfil0 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #b98004 !important; /* Ochre border */
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  margin: 8px 0 !important;
+  color: #000000 !important; /* Black text on white background */
+}
+
+/* Chat input area */
+.vfrc-input-container._1kk1h6j1 {
+  background-color: #FFFFFF !important;
+  border-top: 2px solid #b98004 !important; /* Ochre border */
+  padding: 12px 16px !important;
+}
+
+.vfrc-chat-input._1kk1h6j6 {
+  border: 2px solid #b98004 !important; /* Ochre border */
+  border-radius: 8px !important;
+  padding: 12px !important;
+  font-family: 'Open Sans', Arial, sans-serif !important;
+  font-size: 14px !important;
+  color: #000000 !important; /* Black text */
+  resize: none !important;
+}
+
+/* Send button */
+#vfrc-send-message {
+  background-color: #173271 !important; /* Brand blue */
+  color: #FFFFFF !important; /* White text/icon */
+}
+
+/* Footer text */
+._15oua041._15oua043 {
+  color: #173271 !important; /* Brand blue text */
+  font-size: 12px !important;
+  text-align: center !important;
+  padding: 8px !important;
+}
+
+/* Chat ended text */
+._1o69oyc2::before {
+  color: #173271 !important; /* Brand blue text */
+}
+
+/* Avatar container */
+.vfrc-avatar.wfg6590 {
+  border: 2px solid #b98004 !important; /* Ochre border */
 }

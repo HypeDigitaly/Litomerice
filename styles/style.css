@@ -42,6 +42,13 @@ div[class*="vfrc-header--title"] {
   transform-origin: center !important;
 }
 
+/* Specific SVG styling for header button */
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 svg {
+  fill: white !important;
+  background-color: #b98004 !important;
+  border-radius: 4px !important;
+}
+
 div[class*="vfrc-icon"] {
   width: 28px !important;
   height: 28px !important;

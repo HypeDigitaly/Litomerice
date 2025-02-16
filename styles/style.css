@@ -316,6 +316,14 @@ img[alt="open chat"] {
   text-align: center !important;
 }
 
+/* Chat input container */
+.vfrc-input-container_1kk1h6j1,
+div[class*="vfrc-input-container"],
+._1kk1h6j1 {
+  border: 2px solid #173271 !important;
+  border-radius: 25px !important;
+}
+
 /* Send button */
 #vfrc-send-message {
   background-color: #b98004 !important;

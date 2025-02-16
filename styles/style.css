@@ -1,3 +1,4 @@
+/* Translation overlay styles - updated approach */
 /* Start new chat translation */
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
@@ -18,7 +19,28 @@ div[class*="vfrc-header--title"] {
   color: #173271 !important;
 }
 
-/* Rest of existing styles remain unchanged */
+/* SVG icon background styling */
+.vfrc-icon._141dsik0 {
+  background-color: #b98004 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.vfrc-icon._141dsik0 svg {
+  width: 24px !important;
+  height: 24px !important;
+  fill: none !important;
+  stroke: white !important;
+}
+
+div[class*="vfrc-icon"] {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 4px !important;
+}
+
 #vfrc-start-chat::before,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before {
   content: "Začít nový chat" !important;
@@ -183,8 +205,8 @@ img[alt="open chat"] {
   pointer-events: none !important;
   z-index: 2 !important;
   font-family: "Open Sans", Arial, sans-serif !important;
-  font-size: 14px !important;
   font-weight: 600 !important;
+  font-size: 14px !important;
   line-height: 1.5 !important;
   letter-spacing: normal !important;
   display: block !important;

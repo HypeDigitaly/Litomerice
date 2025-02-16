@@ -47,6 +47,11 @@ div[class*="vfrc-header--title"] {
   transform-origin: center !important;
 }
 
+/* Main widget container border */
+._1be7b5c8 {
+  border: 1px solid #b98004 !important;
+}
+
 /* Specific SVG styling for header button */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 {
   background-color: #b98004 !important;

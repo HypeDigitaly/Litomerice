@@ -2,8 +2,7 @@
 /* Start new chat translation */
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
-  background-color: #FFFFFF !important;
-  border: 1px solid #b98004 !important;
+  background-color: #264EB4 !important;
   border-radius: 4px !important;
   padding: 10px 20px !important;
   color: transparent !important;
@@ -42,7 +41,7 @@ div[class*="vfrc-header--title"] {
   width: 28px !important;
   height: 28px !important;
   fill: none !important;
-  transform: scale(0.85) !important; /* Scaling down the SVG slightly */
+  transform: scale(0.85) !important;
 }
 
 .vfrc-icon._141dsik0 path {
@@ -102,7 +101,7 @@ div[class*="vfrc-icon"] {
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #b98004 !important;
+  color: white !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -110,31 +109,16 @@ div[class*="vfrc-icon"] {
   font-size: 16px !important;
 }
 
-/* System response buttons and action buttons */
+/* Language selection buttons specific styling */
 .vfrc-system-response-actions button,
-.vfrc-button,
-button[class*="vfrc-button"],
-div[class*="_19kum4t1"],
-.button.vfrc-button._1ytjiyv0._17qb7gk0._1ytjiyv1 {
+div[class*="_19kum4t1"] {
   background-color: #FFFFFF !important;
-  border: 1px solid #b98004 !important;
-  color: #b98004 !important;
-}
-
-/* Hover state for buttons */
-.vfrc-system-response-actions button:hover,
-.vfrc-button:hover,
-button[class*="vfrc-button"]:hover,
-div[class*="_19kum4t1"]:hover,
-.button.vfrc-button._1ytjiyv0._17qb7gk0._1ytjiyv1:hover {
-  background-color: #f5f5f5 !important;
   border: 1px solid #b98004 !important;
 }
 
 /* Cancel translation */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
-  background-color: #FFFFFF !important;
-  border: 1px solid #b98004 !important;
+  background-color: #f5f5f5 !important;
   border-radius: 4px !important;
   padding: 10px 20px !important;
   color: transparent !important;
@@ -147,7 +131,7 @@ div[class*="_19kum4t1"]:hover,
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #b98004 !important;
+  color: #264EB4 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -201,7 +185,7 @@ div[class*="_19kum4t1"]:hover,
   justify-content: center !important;
 }
 
-/* Only apply transparent background when launcher is closed (image is visible) */
+/* Only apply transparent background when launcher is closed */
 .vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig) {
   background-color: transparent !important;
   border: none !important;

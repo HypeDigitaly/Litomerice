@@ -316,15 +316,27 @@ img[alt="open chat"] {
   text-align: center !important;
 }
 
-/* Enhanced Chat input container focus and hover states */
+/* Base state for input container */
+.vfrc-input-container_1kk1h6j1,
+div[class*="vfrc-input-container"],
+._1kk1h6j1 {
+  border: 1px solid #e5e7eb !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* Enhanced Chat input container focus state */
 .vfrc-input-container_1kk1h6j1:focus-within,
 div[class*="vfrc-input-container"]:focus-within,
 ._1kk1h6j1:focus-within {
   border: 2px solid #173271 !important;
-  outline: none !important;
+  outline: 0 !important;
   box-shadow: none !important;
-  transition: all 0.2s ease-in-out !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
   background-color: #FFFFFF !important;
+  border-radius: 24px !important;
 }
 
 .vfrc-input-container_1kk1h6j1:hover,

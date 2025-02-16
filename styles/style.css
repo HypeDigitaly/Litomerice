@@ -316,46 +316,33 @@ img[alt="open chat"] {
   text-align: center !important;
 }
 
-/* Base state for input container */
+/* Base state for input container - static grey border */
 .vfrc-input-container_1kk1h6j1,
 div[class*="vfrc-input-container"],
 ._1kk1h6j1 {
-  border: none !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 24px !important;
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
+  background-color: #FFFFFF !important;
+  transition: border 0.2s ease-in-out !important;
 }
 
-/* Remove hover state completely */
-.vfrc-input-container_1kk1h6j1:hover,
-div[class*="vfrc-input-container"]:hover,
-._1kk1h6j1:hover {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* Enhanced Chat input container focus state - only blue border */
+/* Focus state - replace grey with blue border */
 .vfrc-input-container_1kk1h6j1:focus-within,
 div[class*="vfrc-input-container"]:focus-within,
 ._1kk1h6j1:focus-within {
   border: 2px solid #173271 !important;
-  border-radius: 24px !important;
   outline: none !important;
   box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
   background-color: #FFFFFF !important;
 }
 
-/* Additional specific selectors to override any other borders */
-.vfrc-input-container_1kk1h6j1 *,
-div[class*="vfrc-input-container"] *,
-._1kk1h6j1 * {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+/* No hover effects */
+.vfrc-input-container_1kk1h6j1:hover,
+div[class*="vfrc-input-container"]:hover,
+._1kk1h6j1:hover {
+  border: 1px solid #e5e7eb !important;
 }
 
 .vfrc-input-container_1kk1h6j1:hover,

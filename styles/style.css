@@ -9,6 +9,61 @@
   position: relative !important;
 }
 
+/* Accessibility - Button Labels */
+/* Header refresh button */
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._1 {
+  position: relative !important;
+}
+
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._1::after {
+  content: "Obnovit chat" !important; /* "Refresh chat" in Czech */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Voice input button */
+.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd {
+  position: relative !important;
+}
+
+.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd::after {
+  content: "Hlasový vstup" !important; /* "Voice input" in Czech */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Send message button */
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.kbc55z0._1ytjivy0._17qb7gk0._1yt {
+  position: relative !important;
+}
+
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.kbc55z0._1ytjivy0._17qb7gk0._1yt::after {
+  content: "Odeslat zprávu" !important; /* "Send message" in Czech */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 /* Header background color update */
 .vfrc-header._1q5q0m12,
 div[class*="vfrc-header"],

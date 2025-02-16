@@ -24,20 +24,19 @@ div[class*="vfrc-header--title"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border-radius: 50% !important;
-  width: 32px !important;
-  height: 32px !important;
+  width: 24px !important;
+  height: 24px !important;
 }
 
 .vfrc-icon._141dsik0 svg {
-  width: 32px !important;
-  height: 32px !important;
+  width: 24px !important;
+  height: 24px !important;
   fill: none !important;
   transform: scale(0.85) !important; /* Scaling down the SVG slightly */
 }
 
 .vfrc-icon._141dsik0 path {
-  fill: #656d75 !important;
+  fill: white !important;
   stroke: none !important;
   transform-origin: center !important;
 }
@@ -118,9 +117,9 @@ div[class*="vfrc-icon"] {
 
 /* SVG container sizing - adjusted to prevent cropping */
 .ojsd7i6.ojsd7i7 svg {
-  width: 24px !important;
-  height: 24px !important;
-  viewBox: "0 0 24 24" !important;
+  width: 32px !important;
+  height: 32px !important;
+  viewBox: "0 0 32 32" !important;
   stroke-width: 2.5px !important;
 }
 

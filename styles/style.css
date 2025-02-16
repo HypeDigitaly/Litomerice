@@ -24,7 +24,7 @@ div[class*="vfrc-header--title"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background-color: #264EB4 !important;
+  background-color: #b98004 !important;
   border-radius: 50% !important;
   width: 24px !important;
   height: 24px !important;
@@ -167,11 +167,11 @@ img[alt="open chat"] {
   height: 60px !important;
 }
 
-/* Styles for opened state - adjusted positioning */
+/* Styles for microphone button */
 .vfrc-launcher.ojsd7i1:not(:has(.ojsd7it.ojsd7iv.ojsd7ig)) {
   width: 42px !important;
   height: 42px !important;
-  background-color: #264EB4 !important;
+  background-color: #b98004 !important;
   border-radius: 9999px !important;
   position: fixed !important;
   bottom: 20px !important;
@@ -226,6 +226,7 @@ img[alt="open chat"] {
 /* Specific send message button styling - targeting exact button */
 button.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.kbc5520._1ytjivy0._17qb7gk0._1ytjivy5.kbc5521 {
   background-color: #b98004 !important;
+  border-radius: 9999px !important;
 }
 
 button.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.kbc5520._1ytjivy0._17qb7gk0._1ytjivy5.kbc5521 svg {

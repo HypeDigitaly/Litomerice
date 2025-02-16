@@ -17,12 +17,8 @@ div[class*="_1q5q0m12"] {
   background-color: #FFFFFF !important;
 }
 
-/* VFRC Title color styling - corrected selector */
-.vfrc-header--title._1q5q0m14 {
-  color: #173271 !important;
-}
-
-/* Additional backup selectors to ensure coverage */
+/* VFRC Title color styling */
+.vfrc-header--title._1q5q0m14,
 div[class*="vfrc-header--title"] {
   color: #173271 !important;
 }
@@ -86,6 +82,7 @@ div[class*="vfrc-header--title"] {
   stroke: none !important;
 }
 
+/* Generic icon container styling */
 div[class*="vfrc-icon"] {
   width: 28px !important;
   height: 28px !important;
@@ -94,6 +91,7 @@ div[class*="vfrc-icon"] {
   justify-content: center !important;
 }
 
+/* Button text overlays */
 #vfrc-start-chat::before,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before {
   content: "Začít nový chat" !important;
@@ -109,14 +107,29 @@ div[class*="vfrc-icon"] {
   font-size: 16px !important;
 }
 
-/* Language selection buttons specific styling */
+/* Updated Language selection buttons styling */
 .vfrc-system-response-actions button,
-div[class*="_19kum4t1"] {
+div[class*="_19kum4t1"],
+.vfrc-system-response-sel button,
+div[class*="vfrc-system-response-sel"] button {
   background-color: #FFFFFF !important;
   border: 1px solid #b98004 !important;
+  color: #000000 !important;
+  padding: 8px 16px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 4px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  min-width: 80px !important;
 }
 
-/* Cancel translation */
+/* Cancel translation button */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
   background-color: #f5f5f5 !important;
   border-radius: 4px !important;
@@ -139,7 +152,7 @@ div[class*="_19kum4t1"] {
   font-size: 16px !important;
 }
 
-/* Avatar image styles */
+/* Avatar styling */
 .vfrc-assistant-info img.vfrc-avatar,
 .vfrc-avatar.wfg6590.wfg6592 {
   border: none !important;
@@ -147,13 +160,13 @@ div[class*="_19kum4t1"] {
   box-shadow: none !important;
 }
 
-/* Widget positioning adjustment */
+/* Widget positioning */
 ._1emja3f9 {
   bottom: 84px !important;
   right: 20px !important;
 }
 
-/* Button container - default state (when closed) */
+/* Launcher styling - closed state */
 .vfrc-launcher.ojsd7i1 {
   width: 70px !important;
   height: 70px !important;
@@ -167,7 +180,7 @@ div[class*="_19kum4t1"] {
   justify-content: center !important;
 }
 
-/* SVG container sizing - adjusted to prevent cropping */
+/* SVG container in launcher */
 .ojsd7i6.ojsd7i7 svg {
   width: 28px !important;
   height: 28px !important;
@@ -175,7 +188,6 @@ div[class*="_19kum4t1"] {
   stroke-width: 2.5px !important;
 }
 
-/* Ensure the image container has proper padding */
 .ojsd7i6.ojsd7i7 {
   padding: 0 !important;
   width: 60px !important;
@@ -185,19 +197,19 @@ div[class*="_19kum4t1"] {
   justify-content: center !important;
 }
 
-/* Only apply transparent background when launcher is closed */
+/* Transparent background for closed launcher */
 .vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig) {
   background-color: transparent !important;
   border: none !important;
 }
 
-/* Restore hover effects */
+/* Hover effects */
 .vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig):hover {
   transform: scale(1.1) !important;
   transition: transform 0.2s ease !important;
 }
 
-/* The actual image within the launcher */
+/* Launcher image styling */
 .ojsd7it.ojsd7iv.ojsd7ig,
 img[alt="open chat"] {
   width: 60px !important;
@@ -210,14 +222,14 @@ img[alt="open chat"] {
   padding: 0 !important;
 }
 
-/* Ensure parent containers don't restrict size */
+/* Container sizing */
 .ojsd7i6.ojsd7i7,
 .ojsd7i0 {
   width: 60px !important;
   height: 60px !important;
 }
 
-/* Styles for opened state - adjusted positioning */
+/* Opened state styling */
 .vfrc-launcher.ojsd7i1:not(:has(.ojsd7it.ojsd7iv.ojsd7ig)) {
   width: 42px !important;
   height: 42px !important;
@@ -230,7 +242,7 @@ img[alt="open chat"] {
   transform: none !important;
 }
 
-/* Message text alignment */
+/* Message alignment */
 .vfrc-message {
   text-align: left !important;
   justify-content: flex-start !important;
@@ -279,7 +291,7 @@ img[alt="open chat"] {
   color: #FFFFFF !important;
 }
 
-/* New whitening amendment */
+/* Text color override */
 .kbc55z4 {
   color: white !important;
 }

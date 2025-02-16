@@ -177,8 +177,8 @@ button[variant="inline"].vfrc-button._1ytjivy0 * {
 
 /* Chat window border */
 .vfrc-chat {
-  border: 1px solid #b98004 !important;
-  border-radius: 8px !important;
+  border: 2px solid #b98004 !important;
+  border-radius: 16px !important;
   overflow: hidden !important;
 }
 

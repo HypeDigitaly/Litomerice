@@ -1,102 +1,21 @@
-/* LitoBot Chat Interface - Complete Styles
-   Brand Colors:
+/* LitoBot Chat Interface Styles with Brand Colors */
+/* Brand Colors:
    - Blue: #173271 (Primary blue for backgrounds)
    - Ochre: #b98004 (Icons on white, button borders)
    - White: #FFFFFF (Text on blue backgrounds)
    - Black: #000000 (Text on white backgrounds)
 */
 
-/* Main Chat Container */
-.vfrc-widget._1emja3f0._1emja3f1 {
-  border: 2px solid #b98004 !important;
-  border-radius: 12px !important;
-  box-shadow: 0 4px 12px rgba(23, 50, 113, 0.1) !important;
-  overflow: hidden !important;
-}
-
-/* Chat Header */
-.vfrc-header._1q5q0m12 {
-  background-color: #173271 !important;
-  padding: 16px !important;
-}
-
-.vfrc-header--title._1q5q0m14 {
-  color: #FFFFFF !important;
-  font-family: 'Open Sans', Arial, sans-serif !important;
-  font-weight: 600 !important;
-}
-
-/* Avatar Styles */
-.vfrc-assistant-info img.vfrc-avatar,
-.vfrc-avatar.wfg6590.wfg6592,
-.vfrc-avatar.wfg6590.wfg6591 {
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  width: 40px !important;
-  height: 40px !important;
-}
-
-/* Widget Positioning */
-._1emja3f9 {
-  bottom: 84px !important;
-  right: 20px !important;
-}
-
-/* Launcher Button - Default State */
-.vfrc-launcher.ojsd7i1 {
-  width: 70px !important;
-  height: 70px !important;
-  transition: transform 0.2s ease !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  position: fixed !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: transparent !important;
-  border: none !important;
-}
-
-/* Launcher Icon */
-.ojsd7i6.ojsd7i7 svg {
-  width: 24px !important;
-  height: 24px !important;
-  stroke-width: 2.5px !important;
-  color: #b98004 !important;
-}
-
-/* Launcher Image Container */
-.ojsd7i6.ojsd7i7 {
-  padding: 0 !important;
-  width: 60px !important;
-  height: 60px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* Launcher Image */
-.ojsd7it.ojsd7iv.ojsd7ig,
-img[alt="open chat"] {
-  width: 60px !important;
-  height: 60px !important;
-  border: none !important;
-  box-shadow: none !important;
-  object-fit: contain !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Start New Chat Button */
+/* Primary button styles */
 #vfrc-start-chat,
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
-  background-color: #173271 !important;
-  border: 2px solid #b98004 !important;
+  background-color: #173271 !important; /* Brand blue */
   border-radius: 8px !important;
   padding: 12px 24px !important;
   color: transparent !important;
   position: relative !important;
+  transition: transform 0.2s ease !important;
+  border: 2px solid #b98004 !important; /* Ochre border */
 }
 
 #vfrc-start-chat::before,
@@ -106,22 +25,23 @@ img[alt="open chat"] {
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #FFFFFF !important;
+  color: #FFFFFF !important; /* White text on blue background */
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
   font-family: 'Open Sans', Arial, sans-serif !important;
   font-size: 16px !important;
+  font-weight: 500 !important;
 }
 
-/* Cancel Button */
+/* Cancel button styles */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
   background-color: #FFFFFF !important;
-  border: 2px solid #b98004 !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
   color: transparent !important;
   position: relative !important;
+  border: 2px solid #b98004 !important; /* Ochre border */
 }
 
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4::before {
@@ -130,7 +50,7 @@ img[alt="open chat"] {
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #173271 !important;
+  color: #173271 !important; /* Brand blue text */
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -138,97 +58,94 @@ img[alt="open chat"] {
   font-size: 16px !important;
 }
 
-/* Message Text Alignment */
-.vfrc-message {
-  text-align: left !important;
-  justify-content: flex-start !important;
-  background-color: #FFFFFF !important;
-  border: 1px solid #b98004 !important;
+/* Chat widget container */
+.vfrc-widget._1emja3f0._1emja3f1 {
   border-radius: 12px !important;
-  padding: 12px 16px !important;
-  margin: 8px 0 !important;
+  box-shadow: 0 4px 12px rgba(23, 50, 113, 0.1) !important; /* Brand blue shadow */
+  border: 2px solid #b98004 !important; /* Ochre border for entire chat window */
+  overflow: hidden !important; /* Ensure border radius is respected */
 }
 
-.vfrc-message > * {
-  text-align: left !important;
-  margin-left: 0 !important;
-  color: #000000 !important;
+/* Chat header */
+.vfrc-header._1q5q0m12 {
+  background-color: #173271 !important; /* Brand blue */
+  padding: 16px !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
 }
 
-/* Chat Input Area */
-.vfrc-input-container._1kk1h6j1 {
-  background-color: #FFFFFF !important;
-  border-top: 2px solid #b98004 !important;
-  padding: 12px 16px !important;
+.vfrc-header--title._1q5q0m14 {
+  color: #FFFFFF !important; /* White text on blue background */
 }
 
-.vfrc-chat-input._1kk1h6j6 {
-  border: 2px solid #b98004 !important;
-  border-radius: 8px !important;
-  padding: 12px !important;
-  font-family: 'Open Sans', Arial, sans-serif !important;
-  font-size: 14px !important;
-  color: #000000 !important;
+/* Icons */
+.vfrc-icon._141dsik0 svg path {
+  fill: #b98004 !important; /* Ochre icons */
 }
 
-/* Send Button */
-#vfrc-send-message {
-  background-color: #173271 !important;
-  color: #FFFFFF !important;
-  border: 2px solid #b98004 !important;
-  border-radius: 8px !important;
-}
-
-/* Quick Reply Buttons */
+/* Quick reply buttons */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy1 {
   background-color: #FFFFFF !important;
-  border: 2px solid #b98004 !important;
+  border: 2px solid #b98004 !important; /* Ochre border */
   border-radius: 20px !important;
   padding: 8px 16px !important;
-  color: #173271 !important;
+  color: #173271 !important; /* Brand blue text */
   font-size: 14px !important;
   transition: all 0.2s ease !important;
 }
 
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy1:hover {
-  background-color: #173271 !important;
-  color: #FFFFFF !important;
+  background-color: #173271 !important; /* Brand blue */
+  color: #FFFFFF !important; /* White text */
 }
 
-/* Chat Ended Text */
-._1o69oyc2 {
-  color: transparent !important;
-  position: relative !important;
-  text-align: center !important;
-  width: 100% !important;
+/* Message bubbles */
+.vfrc-message._7rpfil0 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #b98004 !important; /* Ochre border */
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  margin: 8px 0 !important;
+  color: #000000 !important; /* Black text on white background */
 }
 
-._1o69oyc2::before {
-  content: "Chat byl ukončen" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: #173271 !important;
-  white-space: nowrap !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
+/* Chat input area */
+.vfrc-input-container._1kk1h6j1 {
+  background-color: #FFFFFF !important;
+  border-top: 2px solid #b98004 !important; /* Ochre border */
+  padding: 12px 16px !important;
+}
+
+.vfrc-chat-input._1kk1h6j6 {
+  border: 2px solid #b98004 !important; /* Ochre border */
+  border-radius: 8px !important;
+  padding: 12px !important;
   font-family: 'Open Sans', Arial, sans-serif !important;
   font-size: 14px !important;
-  font-weight: 600 !important;
+  color: #000000 !important; /* Black text */
+  resize: none !important;
 }
 
-/* Footer */
+/* Send button */
+#vfrc-send-message {
+  background-color: #173271 !important; /* Brand blue */
+  color: #FFFFFF !important; /* White text/icon */
+}
+
+/* Footer text */
 ._15oua041._15oua043 {
-  color: #173271 !important;
+  color: #173271 !important; /* Brand blue text */
   font-size: 12px !important;
   text-align: center !important;
   padding: 8px !important;
-  font-family: 'Open Sans', Arial, sans-serif !important;
 }
 
-/* Hover Effects */
-.vfrc-launcher.ojsd7i1:hover {
-  transform: scale(1.1) !important;
-  transition: transform 0.2s ease !important;
+/* Chat ended text */
+._1o69oyc2::before {
+  color: #173271 !important; /* Brand blue text */
+}
+
+/* Avatar container */
+.vfrc-avatar.wfg6590 {
+  border: 2px solid #b98004 !important; /* Ochre border */
 }

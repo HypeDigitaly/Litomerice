@@ -268,3 +268,15 @@ img[alt="open chat"] {
 .kbc55z4 {
   color: white !important;
 }
+
+/* Header background color update */
+.vfrc-header._1q5q0m12,
+div[class*="vfrc-header"] {
+  background-color: #FFFFFF !important;
+}
+
+/* Ensuring the change applies to all possible header class combinations */
+._1q5q0m12,
+div[class*="_1q5q0m12"] {
+  background-color: #FFFFFF !important;
+}

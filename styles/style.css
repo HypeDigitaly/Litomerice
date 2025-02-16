@@ -9,17 +9,14 @@
   position: relative !important;
 }
 
-/* Accessibility - Button Labels */
-/* Header refresh button */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._1 {
-  position: relative !important;
-}
-
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._1::after {
-  content: "Obnovit chat" !important; /* "Refresh chat" in Czech */
+/* Specific fixes for accessibility errors */
+button[class*="vfrc-button"][class*="vfrc-header--button"][class*="_1q5q0m17_1"]::before,
+button[class*="vfrc-button"][class*="_1ytjivy0"][class*="_17qb7gk0"][class*="_1ytjivy2"][class*="vfrc-header--button"]::before {
+  content: "Obnovit chat" !important;
+  color: transparent !important;
   position: absolute !important;
-  width: 1px !important;
   height: 1px !important;
+  width: 1px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
@@ -28,16 +25,12 @@
   border: 0 !important;
 }
 
-/* Voice input button */
-.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd {
-  position: relative !important;
-}
-
-.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd::after {
-  content: "Hlasový vstup" !important; /* "Voice input" in Czech */
+button[class*="ugfae45"][class*="ugfae40"][class*="ugfae48"][class*="ugfae43"]::before {
+  content: "Hlasový vstup" !important;
+  color: transparent !important;
   position: absolute !important;
-  width: 1px !important;
   height: 1px !important;
+  width: 1px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
@@ -46,16 +39,13 @@
   border: 0 !important;
 }
 
-/* Send message button */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.kbc55z0._1ytjivy0._17qb7gk0._1yt {
-  position: relative !important;
-}
-
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.kbc55z0._1ytjivy0._17qb7gk0._1yt::after {
-  content: "Odeslat zprávu" !important; /* "Send message" in Czech */
+button[id="vfrc-send-message"]::before,
+button[class*="vfrc-button"][class*="kbc55z0"]::before {
+  content: "Odeslat zprávu" !important;
+  color: transparent !important;
   position: absolute !important;
-  width: 1px !important;
   height: 1px !important;
+  width: 1px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
@@ -102,7 +92,7 @@ div[class*="vfrc-header--title"] {
   transform-origin: center !important;
 }
 
-/* Specific SVG styling for header button with accessibility */
+/* Specific SVG styling for header button */
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 {
   background-color: #b98004 !important;
   border-radius: 50% !important;
@@ -115,19 +105,6 @@ div[class*="vfrc-header--title"] {
   padding: 0 !important;
   margin: 0 !important;
   position: relative !important;
-}
-
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0::before {
-  content: "Refresh chat" !important;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
 }
 
 .vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._141dsik0 {
@@ -177,62 +154,6 @@ div[class*="vfrc-icon"] {
   font-size: 16px !important;
 }
 
-/* Voice input button accessibility */
-.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd {
-  position: relative !important;
-}
-
-.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd::before {
-  content: "Enable voice input" !important;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/* Send message button accessibility */
-#vfrc-send-message {
-  position: relative !important;
-  background-color: #b98004 !important;
-  color: #FFFFFF !important;
-  font-family: "Roboto", sans-serif !important;
-}
-
-#vfrc-send-message::before {
-  content: "Send message" !important;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/* Focus states for accessibility */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0:focus,
-.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd:focus,
-#vfrc-send-message:focus {
-  outline: 2px solid #173271 !important;
-  outline-offset: 2px !important;
-}
-
-/* Keyboard navigation enhancement */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0:focus-visible,
-.ugfae45.ugfae40.ugfae48.ugfae43.xksxbz0._1kk1h6ja._1kk1h6jd:focus-visible,
-#vfrc-send-message:focus-visible {
-  outline: 3px solid #173271 !important;
-  outline-offset: 2px !important;
-  box-shadow: 0 0 0 3px rgba(23, 50, 113, 0.3) !important;
-}
-
 /* Updated Language selection buttons styling */
 .vfrc-system-response--actions_1ddzqsn5 button,
 div[class*="vfrc-system-response--actions"] button,
@@ -258,6 +179,7 @@ button[class*="vfrc-button"][variant="inline"] {
   transition: background-color 0.2s ease !important;
 }
 
+/* Rest of your existing CSS remains the same */
 /* Button hover effect */
 .vfrc-system-response--actions_1ddzqsn5 button:hover,
 div[class*="vfrc-system-response--actions"] button:hover,
@@ -449,8 +371,71 @@ div[class*="vfrc-input-container"]:focus-within,
   outline: none !important;
 }
 
+/* Send message button styling with accessibility */
+#vfrc-send-message {
+  background-color: #b98004 !important;
+  color: #FFFFFF !important;
+  font-family: "Roboto", sans-serif !important;
+  position: relative !important;
+}
+
 /* Text color override */
 .kbc55z4 {
   color: white !important;
   font-family: "Roboto", sans-serif !important;
+}
+
+/* Additional accessibility focus states */
+[class*="vfrc-button"]:focus,
+[class*="ugfae45"]:focus,
+#vfrc-send-message:focus,
+[class*="vfrc-launcher"]:focus {
+  outline: 2px solid #173271 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(23, 50, 113, 0.3) !important;
+}
+
+/* Ensure all buttons have accessible hover states */
+[class*="vfrc-button"]:hover,
+[class*="ugfae45"]:hover,
+#vfrc-send-message:hover {
+  cursor: pointer !important;
+}
+
+/* Ensure all interactive elements are reachable by keyboard */
+[class*="vfrc-button"],
+[class*="ugfae45"],
+#vfrc-send-message,
+[class*="vfrc-launcher"],
+[class*="vfrc-input"] {
+  position: relative !important;
+}
+
+/* Maintain contrast ratios for accessibility */
+[class*="vfrc-button"],
+[class*="ugfae45"],
+#vfrc-send-message {
+  min-height: 32px !important;
+  min-width: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Focus states for accessibility */
+button[class*="vfrc-button"]:focus,
+button[class*="ugfae45"]:focus,
+#vfrc-send-message:focus {
+  outline: 2px solid #173271 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(23, 50, 113, 0.3) !important;
+}
+
+/* Keyboard navigation enhancement */
+button[class*="vfrc-button"]:focus-visible,
+button[class*="ugfae45"]:focus-visible,
+#vfrc-send-message:focus-visible {
+  outline: 3px solid #173271 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(23, 50, 113, 0.3) !important;
 }

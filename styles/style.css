@@ -127,10 +127,31 @@ button[class*="vfrc-button"][variant="inline"] {
   align-items: center !important;
   justify-content: center !important;
   margin: 4px !important;
-  text-align: center !important;
-  white-space: normal !important;
   min-width: 80px !important;
   transition: all 0.2s ease !important;
+  white-space: normal !important;
+}
+
+/* Button text content styling */
+.vfrc-system-response--actions_1ddzqsn5 button span,
+div[class*="vfrc-system-response--actions"] button span,
+button[variant="inline"].vfrc-button._1ytjivy0 span,
+.vfrc-system-response--actions button span,
+._19eum4t1 button span,
+button[class*="vfrc-button"][variant="inline"] span,
+.vfrc-system-response--actions_1ddzqsn5 button div,
+div[class*="vfrc-system-response--actions"] button div,
+button[variant="inline"].vfrc-button._1ytjivy0 div,
+.vfrc-system-response--actions button div,
+._19eum4t1 button div,
+button[class*="vfrc-button"][variant="inline"] div {
+  text-align: left !important;
+  width: 100% !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.2 !important;
 }
 
 /* Button hover and active states */
@@ -152,7 +173,7 @@ button[class*="vfrc-button"][variant="inline"]:active {
   transition: all 0.2s ease !important;
 }
 
-/* Ensure text color changes on hover/active for all button children */
+/* Ensure text color changes on hover/active for all button children while maintaining alignment */
 .vfrc-system-response--actions_1ddzqsn5 button:hover *,
 div[class*="vfrc-system-response--actions"] button:hover *,
 button[variant="inline"].vfrc-button._1ytjivy0:hover *,
@@ -160,6 +181,11 @@ button[variant="inline"].vfrc-button._1ytjivy0:hover *,
 div[class*="vfrc-system-response--actions"] button:active *,
 button[variant="inline"].vfrc-button._1ytjivy0:active * {
   color: #FFFFFF !important;
+  text-align: left !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
 }
 
 /* Cancel translation button */

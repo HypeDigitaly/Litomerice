@@ -28,7 +28,7 @@ div[class*="vfrc-header--title"] {
 .vfrc-icon._141dsik0 {
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   border-radius: 50% !important;
   width: 28px !important;
   height: 28px !important;
@@ -125,12 +125,12 @@ button[class*="vfrc-button"][variant="inline"] {
   font-size: 12px !important;
   display: inline-flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   margin: 0 !important;
   text-align: left !important;
   white-space: normal !important;
-  width: 100% !important;
-  max-width: 100% !important;
+  min-width: 80px !important;
+  max-width: fit-content !important;
   transition: all 0.2s ease !important;
   flex-wrap: wrap !important;
   line-height: 1.2 !important;
@@ -141,11 +141,9 @@ button[class*="vfrc-button"][variant="inline"] {
 div[class*="vfrc-system-response--actions"],
 ._19eum4t1 {
   display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
+  flex-wrap: wrap !important;
   gap: 2px !important;
   padding: 4px 8px !important;
-  width: 100% !important;
 }
 
 /* Ensure buttons don't shrink below minimum width */

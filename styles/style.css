@@ -128,7 +128,7 @@ button[class*="vfrc-button"][variant="inline"] {
   justify-content: center !important;
   margin: 4px !important;
   text-align: center !important;
-  white-space: nowrap !important;
+  white-space: normal !important;
   min-width: 80px !important;
   transition: all 0.2s ease !important;
 }

@@ -108,7 +108,7 @@ div[class*="vfrc-icon"] {
   font-size: 16px !important;
 }
 
-/* Updated Language selection buttons styling */
+/* Language selection buttons styling - consolidating multiple similar selectors */
 .vfrc-system-response--actions_1ddzqsn5 button,
 div[class*="vfrc-system-response--actions"] button,
 button[variant="inline"].vfrc-button._1ytjivy0,
@@ -232,10 +232,12 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   right: 20px !important;
 }
 
-/* Launcher styling - closed state */
-.vfrc-launcher.f6dof80 {
-  width: 70px !important;
-  height: 70px !important;
+/* Launcher styling - consolidating closed and opened states */
+.vfrc-launcher.f6dof80,
+.vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig),
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) {
+  width: 84px !important;
+  height: 84px !important;
   transition: transform 0.2s ease !important;
   bottom: 20px !important;
   right: 20px !important;
@@ -244,152 +246,21 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-}
-
-/* SVG container in launcher */
-.f6dof86.f6dof87 svg {
-  width: 28px !important;
-  height: 28px !important;
-  stroke-width: 2.5px !important;
-}
-
-.f6dof86.f6dof87 {
-  padding: 0 !important;
-  width: 60px !important;
-  height: 60px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* Transparent background for closed launcher */
-.vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig) {
   background-color: transparent !important;
   border: none !important;
 }
 
-/* Hover effects */
-.vfrc-launcher.ojsd7i1:has(.ojsd7it.ojsd7iv.ojsd7ig):hover {
-  transform: scale(1.1) !important;
-  transition: transform 0.2s ease !important;
-}
-
-/* Launcher image styling */
+/* SVG and image sizing in launcher - consolidating multiple similar rules */
+.f6dof86.f6dof87 svg,
 .f6dof8t.f6dof8v.f6dof8g,
 img[alt="open chat"] {
   width: 60px !important;
   height: 60px !important;
   border: none !important;
   box-shadow: none !important;
-  background: transparent !important;
   object-fit: contain !important;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-/* Container sizing */
-.ojsd7i6.ojsd7i7,
-.ojsd7i0 {
-  width: 60px !important;
-  height: 60px !important;
-}
-
-/* Opened state styling */
-.vfrc-launcher.ojsd7i1:not(:has(.ojsd7it.ojsd7iv.ojsd7ig)) {
-  width: 42px !important;
-  height: 42px !important;
-  background-color: #173271 !important;
-  border-radius: 9999px !important;
-  position: fixed !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  margin: 0 !important;
-  transform: none !important;
-}
-
-/* Message alignment */
-.vfrc-message {
-  text-align: left !important;
-  justify-content: flex-start !important;
-  font-family: "Roboto", sans-serif !important;
-}
-
-.vfrc-message > * {
-  text-align: left !important;
-  margin-left: 0 !important;
-}
-
-.vfrc-message div {
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
-}
-
-/* Chat ended text */
-._1o69oyc2 {
-  color: transparent !important;
-  position: relative !important;
-  text-align: center !important;
-  width: 100% !important;
-}
-
-._1o69oyc2::before {
-  content: "Chat byl ukončen" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: #173271 !important;
-  white-space: nowrap !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
-  font-family: "Roboto", sans-serif !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
-  line-height: 1.5 !important;
-  letter-spacing: normal !important;
-  display: block !important;
-  text-align: center !important;
-}
-
-/* Chat input container focus state */
-.vfrc-input-container_1kk1h6j1:focus-within,
-div[class*="vfrc-input-container"]:focus-within,
-._1kk1h6j1:focus-within {
-  border-color: #173271 !important;
-  outline: none !important;
-}
-
-/* Send button */
-#vfrc-send-message {
-  background-color: #b98004 !important;
-  color: #FFFFFF !important;
-  font-family: "Roboto", sans-serif !important;
-}
-
-/* Text color override */
-.kbc55z4 {
-  color: white !important;
-  font-family: "Roboto", sans-serif !important;
-}
-
-/* Button container - default state (when closed) */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) {
-  width: 84px !important;
-  height: 84px !important;
-  transition: none !important;
-  animation: none !important;
-  background-color: transparent !important;
-  border: none !important;
-}
-
-/* Target both SVG and IMG when in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g {
-  width: 84px !important;
-  height: 84px !important;
-  border-radius: 42px !important;
-  border: none !important;
-  box-shadow: none !important;
-  object-fit: contain !important;
 }
 
 /* Container for the image/svg */
@@ -399,29 +270,4 @@ div[class*="vfrc-input-container"]:focus-within,
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-}
-
-/* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
-  width: 42px !important;
-  height: 42px !important;
-  background-color: #173271 !important;
-  border-radius: 9999px !important;
-  margin-right: 0px !important;
-  position: relative !important;
-  overflow: hidden !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* POUZE šipka v otevřeném stavu */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-  width: 24px !important;
-  height: 24px !important;
-  transform: none !important;
-  object-fit: contain !important;
 }

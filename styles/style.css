@@ -273,8 +273,7 @@ img[alt="open chat"] {
 }
 
 /* Specific styling for the close button in opened state */
-.ojsd7it.ojsd7iv.ojsd7ig:has(svg[viewBox="0 0 32 32"]),
-.f6dof8t.f6dof8v.f6dof8g:has(svg[viewBox="0 0 32 32"]) {
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
   width: 42px !important;
   height: 42px !important;
   background-color: #173271 !important;
@@ -285,11 +284,12 @@ img[alt="open chat"] {
   overflow: hidden !important;
 }
 
-/* Arrow SVG sizing in opened state */
-.ojsd7it.ojsd7iv.ojsd7ig svg[viewBox="0 0 32 32"],
-.f6dof8t.f6dof8v.f6dof8g svg[viewBox="0 0 32 32"] {
+/* Arrow SVG sizing in opened state - using exact class names from the DOM */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
   width: 24px !important;
   height: 24px !important;
   transform: none !important;
   object-fit: contain !important;
 }
+
+/* Remove all other conflicting rules targeting SVG or arrow elements */

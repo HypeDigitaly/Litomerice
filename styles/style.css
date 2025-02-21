@@ -254,8 +254,8 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
 .f6dof86.f6dof87 svg,
 .f6dof8t.f6dof8v.f6dof8g,
 img[alt="open chat"] {
-  width: 42px !important;
-  height: 42px !important;
+  width: 60px !important;
+  height: 60px !important;
   border: none !important;
   box-shadow: none !important;
   object-fit: contain !important;
@@ -270,4 +270,12 @@ img[alt="open chat"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+/* Add new rule for opened state SVG */
+.ojsd7it.ojsd7iv.ojsd7ig svg,
+.f6dof8t.f6dof8v.f6dof8g svg {
+  width: 30px !important;
+  height: 30px !important;
+  transform: scale(0.7) !important;
 }

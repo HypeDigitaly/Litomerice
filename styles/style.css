@@ -92,10 +92,18 @@ div[class*="vfrc-icon"] {
   justify-content: center !important;
 }
 
-/* Button text overlays - unified approach */
-#vfrc-start-chat::before,
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before,
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2._1q15b0b4::before {
+/* Button text overlays - using attribute selectors */
+button[label="Start new chat"],
+#vfrc-start-chat {
+  background-color: #173271 !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  color: transparent !important;
+  position: relative !important;
+}
+
+button[label="Start new chat"]::before,
+#vfrc-start-chat::before {
   content: "Začít nový chat" !important;
   position: absolute !important;
   left: 50% !important;
@@ -109,9 +117,12 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2._1q15b0b4::before {
   font-size: 16px !important;
 }
 
-/* Cancel button text overlay - unified */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4::before,
-.button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b3._1q15b0b4::before {
+button[label="Cancel"] {
+  position: relative !important;
+  color: transparent !important;
+}
+
+button[label="Cancel"]::before {
   content: "Zavřít" !important;
   position: absolute !important;
   left: 50% !important;

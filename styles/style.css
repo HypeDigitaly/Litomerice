@@ -272,10 +272,16 @@ img[alt="open chat"] {
   justify-content: center !important;
 }
 
-/* Add new rule for opened state SVG */
+/* Specific styling for the close button arrow SVG */
+.ojsd7it.ojsd7iv.ojsd7ig svg path,
+.f6dof8t.f6dof8v.f6dof8g svg path {
+  transform: scale(0.5) !important;
+  transform-origin: center !important;
+}
+
+/* Remove the previous SVG scaling rule that was affecting the entire SVG element */
 .ojsd7it.ojsd7iv.ojsd7ig svg,
 .f6dof8t.f6dof8v.f6dof8g svg {
-  width: 30px !important;
-  height: 30px !important;
-  transform: scale(0.7) !important;
+  width: 21px !important;
+  height: 21px !important;
 }

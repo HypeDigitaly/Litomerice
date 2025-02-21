@@ -92,15 +92,32 @@ div[class*="vfrc-icon"] {
   justify-content: center !important;
 }
 
-/* Button text overlays */
+/* Button text overlays - unified approach */
 #vfrc-start-chat::before,
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before {
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4::before,
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2._1q15b0b4::before {
   content: "Začít nový chat" !important;
   position: absolute !important;
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
   color: white !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* Cancel button text overlay - unified */
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4::before,
+.button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b3._1q15b0b4::before {
+  content: "Zavřít" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #173271 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -186,29 +203,6 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   word-wrap: break-word !important;
   word-break: normal !important;
   overflow-wrap: break-word !important;
-}
-
-/* Cancel translation button */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4 {
-  background-color: #f5f5f5 !important;
-  border-radius: 8px !important;
-  padding: 10px 20px !important;
-  color: transparent !important;
-  position: relative !important;
-}
-
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy3._1ytjivy4::before {
-  content: "Zavřít" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: #173271 !important;
-  white-space: nowrap !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
-  font-family: "Roboto", sans-serif !important;
-  font-size: 16px !important;
 }
 
 /* Chat window border */

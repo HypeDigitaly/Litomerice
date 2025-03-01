@@ -268,7 +268,7 @@ img[alt="open chat"] {
   object-fit: contain !important;
   margin: 0 !important;
   padding: 0 !important;
-  transform: translateX(14px) !important;
+  transform: translateX(9px) !important;
   border-radius: 4px !important;
 }
 
@@ -328,8 +328,6 @@ button[class*="vfrc-button"][class*="vfrc-launcher"] {
 img[src*="ikona-final-512.png"],
 .f6dof8t.f6dof8v.f6dof8g {
   border-radius: 0 !important;
-  margin-left: 16px !important;
+  margin-left: 11px !important;
   background: transparent !important;
 }
-
-/* Remove all other conflicting rules targeting SVG or arrow elements */

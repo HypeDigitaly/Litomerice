@@ -253,19 +253,23 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   justify-content: center !important;
   background-color: transparent !important;
   border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* SVG and image sizing in launcher - consolidating multiple similar rules */
 .f6dof86.f6dof87 svg,
 .f6dof8t.f6dof8v.f6dof8g,
 img[alt="open chat"] {
-  width: 60px !important;
-  height: 60px !important;
+  width: 70px !important;
+  height: 70px !important;
   border: none !important;
   box-shadow: none !important;
   object-fit: contain !important;
   margin: 0 !important;
   padding: 0 !important;
+  transform: translateX(4px) !important;
+  border-radius: 4px !important;
 }
 
 /* Container for the image/svg */
@@ -275,6 +279,11 @@ img[alt="open chat"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Specific styling for the close button in opened state */
@@ -297,4 +306,28 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   object-fit: contain !important;
 }
 
-/* Remove all other conflicting rules targeting SVG or arrow elements */
+/* Remove background and border from launcher icon */
+.f6dof8t.f6dof8v.f6dof8g,
+.f6dof81:has(.f6dof8t.f6dof8v.f6dof8g),
+.f6dof80:has(.f6dof86.f6dof87),
+button[class*="vfrc-button"][class*="vfrc-launcher"] {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Additional styling for the launcher avatar container */
+.f6dof86.f6dof88,
+.f6dof8t.f6dof8v {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Target the launcher icon specifically */
+img[src*="ikona-final-512.png"],
+.f6dof8t.f6dof8v.f6dof8g {
+  border-radius: 0 !important;
+  margin-left: 6px !important;
+  background: transparent !important;
+}

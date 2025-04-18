@@ -520,3 +520,12 @@ button[class*="vfrc-button"][class*="vfrc-launcher"] {
   border: none !important;
   box-shadow: none !important;
 }
+
+/* Header background color update */
+.vfrc-header._1q5q0m12,
+div[class*="vfrc-header"],
+._1q5q0m12,
+div[class*="_1q5q0m12"],
+.vfrc-header.jyiuei2 {
+  background-color: #FFFFFF !important;
+}

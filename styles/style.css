@@ -229,12 +229,18 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   overflow: hidden !important;
 }
 
-/* Avatar styling (In-Chat Assistant Avatar) */
+/* Avatar styling (In-Chat Assistant Avatar) - CORRECTED SIZE */
 .vfrc-assistant-info img.vfrc-avatar,
-.vfrc-avatar.wfg6590.wfg6592 {
+.vfrc-avatar.wfg6590.wfg6592,
+.vfrc-system-response img.vfrc-avatar { /* Added system response img */
+  width: 64px !important;  /* Set specific size */
+  height: 64px !important; /* Set specific size */
+  min-width: 64px !important;
+  min-height: 64px !important;
   border: none !important;
-  border-radius: 0 !important;
+  border-radius: 0 !important; /* Keep original style: no rounding */
   box-shadow: none !important;
+  object-fit: contain !important; /* Ensure image fits */
 }
 
 /* === NEW LAUNCHER/WIDGET STYLING FROM REFERENCE === */
@@ -305,10 +311,10 @@ div.f6dof80:has(img[alt="open chat"]) {
   margin: 0 !important;
 }
 
-/* Target the actual launcher image in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"],
-img[src*="ikona-final-512.png"] { /* Added specific image source target */
+/* Target the actual launcher image in closed state - REFINED SELECTOR */
+.vfrc-launcher:has(img[alt="open chat"]) img.f6dof8u.f6dof8w.f6dof8h,
+.vfrc-launcher:has(img[alt="open chat"]) img[alt="open chat"],
+.vfrc-launcher img[src*="ikona-final-512.png"] { /* Made selector more specific to launcher context */
   width: 100px !important;
   height: 100px !important;
   min-width: 100px !important;
@@ -338,7 +344,7 @@ div._1emja3f9:has(#voiceflow-chat) {
   align-items: flex-end !important;
 }
 
-/* Launcher Button in opened state - SIZE 42x42 */
+/* Launcher Button in opened state - SIZE 42x42 - CORRECTED COLOR */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]),
 div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
   width: 42px !important;
@@ -347,14 +353,14 @@ div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
   min-height: 42px !important;
   max-width: 42px !important;
   max-height: 42px !important;
-  background-color: #FCB903 !important; /* Color from reference */
+  background-color: #173271 !important; /* CORRECTED background color */
   border: none !important; /* Ensure no border */
   border-radius: 9999px !important;
   overflow: hidden !important;
   transform: none !important;
   display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  align-items: center !important; /* Ensure centering */
+  justify-content: center !important; /* Ensure centering */
   padding: 0 !important; /* Reset padding */
   margin-top: 15px !important; /* Spacing from chat window */
   margin-right: 15px !important; /* Spacing from edge */
@@ -365,7 +371,7 @@ div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
   box-shadow: none !important; /* Ensure no shadow */
 }
 
-/* Container for svg in opened state */
+/* Container for svg in opened state - ENSURE CENTERING */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
   width: 42px !important;
   height: 42px !important;
@@ -373,9 +379,9 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   min-height: 42px !important;
   max-width: 42px !important;
   max-height: 42px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex !important; /* Ensure centering */
+  align-items: center !important; /* Ensure centering */
+  justify-content: center !important; /* Ensure centering */
   background-color: transparent !important; /* Ensure transparent background */
   border: none !important;
   box-shadow: none !important;
@@ -383,17 +389,17 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   margin: 0 !important;
 }
 
-/* Arrow icon SVG in opened state launcher - SIZE 21x21 */
+/* Arrow icon SVG in opened state launcher - SIZE 21x21 - CORRECTED COLOR */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
   width: 21px !important; /* Proportional size from reference */
   height: 21px !important;
   transform: none !important;
   object-fit: contain !important;
-  fill: #173271 !important; /* Example color for the arrow - adjust if needed */
+  fill: white !important; /* CORRECTED fill color for contrast */
 }
 
 /* Override path fill for the arrow icon specifically if needed */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg path {
-   fill: #173271 !important; /* Ensures path color */
+   fill: white !important; /* CORRECTED fill color for contrast */
    stroke: none !important;
 }

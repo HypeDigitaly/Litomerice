@@ -1,102 +1,239 @@
-/* Translation overlay styles - updated approach */
-/* Start new chat translation */
-#vfrc-start-chat,
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
+/* ================= RESET ALL BUTTON CONTAINERS FIRST ================= */
+/* Reset all button containers to remove potentially problematic default styling */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
+.vfrc-launcher,
+.f6dof81,
+.f6dof87.f6dof89,
+.f6dof86.f6dof88,
+div.f6dof87.f6dof89,
+div.f6dof8m.f6dof8o.f6dof8r.f6dof8f,
+div.f6dof87.f6dof89 {
+  width: auto !important;
+  height: auto !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* ================= MAIN CONTAINER STYLING (APPLIES TO BOTH STATES) ================= */
+/* Main container positioning */
+._1emja3f9 {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+/* CLOSED STATE - specific positioning */
+._1emja3f9:has(img[alt="open chat"]),
+._1emja3f9:not(:has(#voiceflow-chat)) {
+  bottom: 20px !important;
+  right: 20px !important;
+}
+
+/* OPENED STATE - specific positioning */
+._1emja3f9:has(#voiceflow-chat) {
+  bottom: 84px !important;
+  right: 20px !important;
+}
+
+/* ================= CLOSED STATE STYLING ================= */
+/* Parent containers in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]),
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8u.f6dof8w.f6dof8h) {
+  width: 84px !important;
+  height: 84px !important;
+  min-width: 84px !important;
+  min-height: 84px !important;
+  max-width: 84px !important;
+  max-height: 84px !important;
+  background-color: transparent !important;
+  border: none !important;
+  overflow: visible !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: content-box !important;
+  transform: none !important;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+}
+
+/* Additional selectors for parent container in closed state */
+div.f6dof80:has(img[alt="open chat"]) {
+  width: 84px !important;
+  height: 84px !important;
+  min-width: 84px !important;
+  min-height: 84px !important;
+  max-width: 84px !important;
+  max-height: 84px !important;
+}
+
+/* Immediate image container in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof87.f6dof89,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof86.f6dof88 {
+  width: 84px !important;
+  height: 84px !important;
+  min-width: 84px !important;
+  min-height: 84px !important;
+  max-width: 84px !important;
+  max-height: 84px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Target the actual image in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"] {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  min-height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  border-radius: 4px !important;
+  border: none !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  box-sizing: content-box !important;
+  transform: translateX(4px) !important;
+  aspect-ratio: 1/1 !important;
+  margin-left: 6px !important;
+  background: transparent !important;
+}
+
+/* Keyframes for the image glow pulse */
+/* @keyframes pulseImageGlow { ... } */ /* Commented out as animation is removed */
+
+/* ================= OPENED STATE STYLING ================= */
+/* Main container in opened state */
+div._1emja3f9:has(#voiceflow-chat) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+}
+
+/* Button in opened state - INCREASED SIZE TO 42x42 FROM 36x36 */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
   background-color: #173271 !important;
-  border-radius: 8px !important;
-  padding: 10px 20px !important;
+  border-radius: 9999px !important;
+  overflow: hidden !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 15px !important;
+  margin-right: 15px !important;
+  margin-bottom: 15px !important;
+  position: relative !important; /* Override fixed position from the default */
+  bottom: auto !important; /* Override bottom from the default */
+  right: auto !important; /* Override right from the default */
+}
+
+/* Additional selectors for parent container in opened state */
+div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+}
+
+/* Container for svg in opened state */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+}
+
+/* Arrow icon in opened state - INCREASED PROPORTIONALLY */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
+  width: 24px !important;
+  height: 24px !important;
+  transform: none !important;
+  object-fit: contain !important;
+}
+
+/* ================= BUTTON TEXT REPLACEMENT ================= */
+/* Replace "Open chat agent" with "Otevřít chatbot" */
+button[title="Open chat agent"] {
   color: transparent !important;
   position: relative !important;
 }
 
-/* Header background color update */
-.vfrc-header._1q5q0m12,
-div[class*="vfrc-header"],
-._1q5q0m12,
-div[class*="_1q5q0m12"] {
-  background-color: #FFFFFF !important;
-}
-
-/* VFRC Title color styling */
-.vfrc-header--title._1q5q0m14,
-div[class*="vfrc-header--title"] {
-  color: #173271 !important;
-  font-family: "Roboto", sans-serif !important;
-}
-
-/* SVG icon styling (Generic) */
-.vfrc-icon._1t7e06e0 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 50% !important;
-  width: 28px !important;
-  height: 28px !important;
-}
-
-.vfrc-icon._1t7e06e0 svg {
-  width: 28px !important;
-  height: 28px !important;
-  fill: none !important;
-  transform: scale(0.85) !important; /* Kept generic scale */
-}
-
-.vfrc-icon._1t7e06e0 path {
-  fill: #b98004 !important; /* Kept original header icon color */
-  stroke: none !important;
-  transform-origin: center !important;
-}
-
-/* Specific SVG styling for HEADER close button */
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 {
-  background-color: #b98004 !important; /* Kept original header button background */
-  border-radius: 50% !important;
-  width: 28px !important; /* Kept original header button size */
-  height: 28px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+button[title="Open chat agent"]::before {
+  content: "Otevřít chatbot" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
   overflow: hidden !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._1t7e06e0 {
-  width: 28px !important; /* Kept original header button icon container size */
-  height: 28px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin: 0 !important;
-  padding: 0 !important;
+/* Replace "Close chat agent" with "Zavřít chatbot" */
+button[title="Close chat agent"] {
+  color: transparent !important;
+  position: relative !important;
 }
 
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._1t7e06e0 svg {
-  width: 24px !important; /* Kept original header button svg size */
-  height: 24px !important;
-  min-width: 24px !important;
-  min-height: 24px !important;
-  transform: none !important; /* Override generic scale for header button */
+button[title="Close chat agent"]::before {
+  content: "Zavřít chatbot" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
 }
 
-.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2.vfrc-header--button._1q5q0m17._17qb7gk0 .vfrc-icon._1t7e06e0 path {
-  fill: white !important; /* Kept original header button path color */
-  stroke: none !important;
-}
-
-/* Generic icon container styling */
-div[class*="vfrc-icon"] {
-  width: 28px !important; /* Kept original size */
-  height: 28px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* Button text overlays - using attribute selectors */
+/* ================= OTHER STYLING ================= */
+/* Translation overlay styles - updated approach */
+/* Remove backgrounds and hide original text */
+.vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4,
 button[label="Start new chat"],
+button[label="Cancel"],
 #vfrc-start-chat {
-  background-color: #173271 !important; /* Kept original color */
+  background: transparent !important;
+  border: none !important;
+  color: transparent !important;
+  position: relative !important;
+}
+
+/* Hide all original text contents */
+.vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4 span,
+button[label="Start new chat"] span,
+button[label="Cancel"] span,
+#vfrc-start-chat span {
+  display: none !important;
+}
+
+/* Start new chat translation - all variations */
+button[label="Start new chat"],
+#vfrc-start-chat,
+.vfrc-button._1ytjivy0._17qb7gk0._1ytjivy2._1ytjivy4 {
+  background-color: #173271 !important;
   border-radius: 8px !important;
   padding: 10px 20px !important;
   color: transparent !important;
@@ -118,14 +255,10 @@ button[label="Start new chat"]::before,
   font-size: 16px !important;
 }
 
+/* Cancel translation */
 button[label="Cancel"] {
   position: relative !important;
   color: transparent !important;
-  /* Assuming Cancel button styling should match Start button */
-  background-color: #FFFFFF !important; /* Example: Match language buttons background */
-  border: 1px solid #b98004 !important; /* Example: Match language buttons border */
-  border-radius: 8px !important;
-  padding: 10px 20px !important;
 }
 
 button[label="Cancel"]::before {
@@ -134,7 +267,7 @@ button[label="Cancel"]::before {
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  color: #173271 !important; /* Example: Match language buttons text color */
+  color: #173271 !important;
   white-space: nowrap !important;
   pointer-events: none !important;
   z-index: 2 !important;
@@ -142,7 +275,140 @@ button[label="Cancel"]::before {
   font-size: 16px !important;
 }
 
-/* Language selection buttons styling - consolidating multiple similar selectors */
+/* Message text alignment */
+.vfrc-message {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
+/* Ensure message content is also left-aligned */
+.vfrc-message > * {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+/* In case there are any flex containers within the message */
+.vfrc-message div {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+/* Aggressive translation targeting for "Chat has ended" text */
+.t1cwqp2,
+div.t1cwqp2,
+.t1cwqp1,
+div.t1cwqp1,
+div[class^="t1cwqp"],
+div[class*="t1cwqp"] {
+    color: transparent !important;
+    font-size: 0 !important;
+    visibility: hidden !important;
+    position: relative !important;
+    display: block !important;
+    height: 30px !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+}
+
+/* Target any potential child elements */
+.t1cwqp2 *,
+div.t1cwqp2 *,
+.t1cwqp1 *,
+div.t1cwqp1 *,
+div[class^="t1cwqp"] *,
+div[class*="t1cwqp"] * {
+    color: transparent !important;
+    font-size: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Insert translated text */
+.t1cwqp2::after,
+div.t1cwqp2::after,
+.t1cwqp1::after,
+div.t1cwqp1::after,
+div[class^="t1cwqp"]::after,
+div[class*="t1cwqp"]::after {
+    content: "Chat byl ukončen" !important;
+    visibility: visible !important;
+    color: #5F7CA0 !important;
+    font-family: "Open Sans", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Remove all previous translation attempts */
+div[class*="t1cwqp"]::before,
+div:has(> span:only-child:contains("Chat has ended"))::before,
+div[class*="t1cwqp"] > span,
+div[class*="t1cwqp"] > div {
+    display: none !important;
+}
+
+/* ADDED TEXT ALIGNMENT FIX */
+/* For all chat message containers */
+.vfrc-message,
+div[class*="vfrc-chat-dialog"],
+div[class*="knxm730"],
+div[class*="_15emaa"],
+div[class*="vfrc-user-response"],
+div[class*="vfrc-system-response"],
+div[class*="g3dqfd"],
+div[class*="response-content"],
+div[class*="streaming-response-container"] {
+  text-align: left !important;
+}
+
+/* For text elements */
+.vfrc-message span,
+.vfrc-message p,
+div[class*="vfrc-message"] * {
+  text-align: left !important;
+}
+
+/* ================= PROACTIVE MESSAGE STYLING ================= */
+/* Adjust vertical position of the proactive message container */
+/* The original 'bottom: 100%' positions the bottom edge of this container
+   at the top edge of its parent. Adding margin-bottom pushes it further up. */
+._6r9xee0 {
+  margin-bottom: 60px !important; /* Move upwards by 50px */
+}
+
+/* Style the inner proactive message div for the animated border */
+div._6r9xee3.o231sh1 {
+  position: relative !important;
+  z-index: 0 !important;
+  border-radius: 10px !important;
+  background-color: #A99456 !important;
+  color: #1a1e23 !important;
+  opacity: 1 !important;
+
+  /* Restore ONLY scale pulse animation */
+  /* animation: pulseScale 1.8s ease-in-out infinite !important; */
+  transform-origin: center center !important;
+}
+
+/* Restore Keyframes for the pulsing scale */
+/* @keyframes pulseScale { ... } */
+
+/* REMOVE Keyframes for pulsing background color */
+/* @keyframes pulseColor { ... } */
+
+/* Ensure text inside is visible above the background color */
+div._6r9xee3.o231sh1 > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Language selection / Action buttons styling */
 .vfrc-system-response--actions_1ddzqsn5 button,
 div[class*="vfrc-system-response--actions"] button,
 button[variant="inline"].vfrc-button._1ytjivy0,
@@ -166,7 +432,7 @@ button[class*="vfrc-button"][variant="inline"] {
   white-space: normal !important;
 }
 
-/* Button text content styling */
+/* Action Button text content styling */
 .vfrc-system-response--actions_1ddzqsn5 button span,
 div[class*="vfrc-system-response--actions"] button span,
 button[variant="inline"].vfrc-button._1ytjivy0 span,
@@ -188,7 +454,7 @@ button[class*="vfrc-button"][variant="inline"] div {
   line-height: 1.2 !important;
 }
 
-/* Button hover and active states */
+/* Action Button hover and active states */
 .vfrc-system-response--actions_1ddzqsn5 button:hover,
 div[class*="vfrc-system-response--actions"] button:hover,
 button[variant="inline"].vfrc-button._1ytjivy0:hover,
@@ -201,13 +467,13 @@ button[variant="inline"].vfrc-button._1ytjivy0:active,
 .vfrc-system-response--actions button:active,
 ._19eum4t1 button:active,
 button[class*="vfrc-button"][variant="inline"]:active {
-  background-color: #173271 !important; /* Kept original hover color */
+  background-color: #173271 !important;
   border: 1px solid #173271 !important;
   color: #FFFFFF !important;
   transition: all 0.2s ease !important;
 }
 
-/* Ensure text color changes on hover/active for all button children while maintaining alignment */
+/* Ensure text color changes on hover/active for all button children */
 .vfrc-system-response--actions_1ddzqsn5 button:hover *,
 div[class*="vfrc-system-response--actions"] button:hover *,
 button[variant="inline"].vfrc-button._1ytjivy0:hover *,
@@ -229,177 +495,28 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   overflow: hidden !important;
 }
 
-/* Avatar styling (In-Chat Assistant Avatar) - CORRECTED SIZE */
+/* Avatar styling */
 .vfrc-assistant-info img.vfrc-avatar,
-.vfrc-avatar.wfg6590.wfg6592,
-.vfrc-system-response img.vfrc-avatar { /* Added system response img */
-  width: 32px !important;  /* Set specific size */
-  height: 32px !important; /* Set specific size */
-  min-width: 32px !important;
-  min-height: 32px !important;
+.vfrc-avatar.wfg6590.wfg6592 {
   border: none !important;
-  border-radius: 0 !important; /* Keep original style: no rounding */
+  border-radius: 0 !important;
   box-shadow: none !important;
-  object-fit: contain !important; /* Ensure image fits */
 }
 
-/* === NEW LAUNCHER/WIDGET STYLING FROM REFERENCE === */
-
-/* ================= MAIN CONTAINER STYLING (APPLIES TO BOTH STATES) ================= */
-/* Main container positioning */
-._1emja3f9 {
-  position: fixed !important;
-  z-index: 9999 !important;
-}
-
-/* CLOSED STATE - specific positioning */
-._1emja3f9:has(img[alt="open chat"]),
-._1emja3f9:not(:has(#voiceflow-chat)) {
-  bottom: 15px !important;
-  right: 15px !important;
-}
-
-/* OPENED STATE - specific positioning */
-._1emja3f9:has(#voiceflow-chat) {
-  bottom: 0 !important;
-  right: 0 !important;
-}
-
-/* ================= CLOSED STATE LAUNCHER STYLING ================= */
-/* Parent containers in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]),
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8u.f6dof8w.f6dof8h),
-div.f6dof80:has(img[alt="open chat"]) {
-  width: 100px !important;
-  height: 100px !important;
-  min-width: 100px !important;
-  min-height: 100px !important;
-  max-width: 100px !important;
-  max-height: 100px !important;
-  background-color: transparent !important;
-  border: none !important;
-  border-radius: 50px !important;
-  overflow: visible !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  box-sizing: content-box !important;
-  transform: none !important;
-  position: fixed !important; /* Explicitly set fixed positioning */
-  bottom: 15px !important; /* Match container positioning */
-  right: 15px !important; /* Match container positioning */
-}
-
-/* Immediate image container in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof87.f6dof89,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof86.f6dof88 {
-  width: 100px !important;
-  height: 100px !important;
-  min-width: 100px !important;
-  min-height: 100px !important;
-  max-width: 100px !important;
-  max-height: 100px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+/* Remove conflicting launcher background/border rules */
+.f6dof8t.f6dof8v.f6dof8g,
+.f6dof81:has(.f6dof8t.f6dof8v.f6dof8g),
+.f6dof80:has(.f6dof86.f6dof87),
+button[class*="vfrc-button"][class*="vfrc-launcher"] {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
-/* Target the actual launcher image in closed state - REFINED SELECTOR */
-.vfrc-launcher:has(img[alt="open chat"]) img.f6dof8u.f6dof8w.f6dof8h,
-.vfrc-launcher:has(img[alt="open chat"]) img[alt="open chat"],
-.vfrc-launcher img[src*="ikona-final-512.png"] { /* Made selector more specific to launcher context */
-  width: 100px !important;
-  height: 100px !important;
-  min-width: 100px !important;
-  min-height: 100px !important;
-  max-width: 100px !important;
-  max-height: 100px !important;
-  border-radius: 50px !important;
-  border: none !important; /* Ensure no border */
-  object-fit: contain !important;
-  object-position: center !important;
-  display: block !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-  box-sizing: content-box !important;
-  transform: none !important;
-  aspect-ratio: 1/1 !important;
-  background: transparent !important; /* Ensure transparent background */
-  box-shadow: none !important; /* Ensure no shadow */
-}
-
-
-/* ================= OPENED STATE LAUNCHER STYLING ================= */
-/* Main container in opened state */
-div._1emja3f9:has(#voiceflow-chat) {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-end !important;
-}
-
-/* Launcher Button in opened state - SIZE 42x42 - CORRECTED COLOR */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]),
-div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
-  width: 42px !important;
-  height: 42px !important;
-  min-width: 42px !important;
-  min-height: 42px !important;
-  max-width: 42px !important;
-  max-height: 42px !important;
-  background-color: #173271 !important; /* CORRECTED background color */
-  border: none !important; /* Ensure no border */
-  border-radius: 9999px !important;
-  overflow: hidden !important;
-  transform: none !important;
-  display: flex !important;
-  align-items: center !important; /* Ensure centering */
-  justify-content: center !important; /* Ensure centering */
-  padding: 0 !important; /* Reset padding */
-  margin-top: 15px !important; /* Spacing from chat window */
-  margin-right: 15px !important; /* Spacing from edge */
-  margin-bottom: 15px !important; /* Spacing from bottom */
-  position: relative !important; /* Override fixed position from closed state */
-  bottom: auto !important;
-  right: auto !important;
-  box-shadow: none !important; /* Ensure no shadow */
-}
-
-/* Container for svg in opened state - ENSURE CENTERING */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
-  width: 42px !important;
-  height: 42px !important;
-  min-width: 42px !important;
-  min-height: 42px !important;
-  max-width: 42px !important;
-  max-height: 42px !important;
-  display: flex !important; /* Ensure centering */
-  align-items: center !important; /* Ensure centering */
-  justify-content: center !important; /* Ensure centering */
-  background-color: transparent !important; /* Ensure transparent background */
+/* Additional styling for the launcher avatar container */
+.f6dof86.f6dof88,
+.f6dof8t.f6dof8v {
+  background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Arrow icon SVG in opened state launcher - SIZE 21x21 - CORRECTED COLOR */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-  width: 21px !important; /* Proportional size from reference */
-  height: 21px !important;
-  transform: none !important;
-  object-fit: contain !important;
-  fill: white !important; /* CORRECTED fill color for contrast */
-}
-
-/* Override path fill for the arrow icon specifically if needed */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg path {
-   fill: white !important; /* CORRECTED fill color for contrast */
-   stroke: none !important;
 }

@@ -233,10 +233,10 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
 .vfrc-assistant-info img.vfrc-avatar,
 .vfrc-avatar.wfg6590.wfg6592,
 .vfrc-system-response img.vfrc-avatar { /* Added system response img */
-  width: 64px !important;  /* Set specific size */
-  height: 64px !important; /* Set specific size */
-  min-width: 64px !important;
-  min-height: 64px !important;
+  width: 32px !important;  /* Set specific size */
+  height: 32px !important; /* Set specific size */
+  min-width: 32px !important;
+  min-height: 32px !important;
   border: none !important;
   border-radius: 0 !important; /* Keep original style: no rounding */
   box-shadow: none !important;
@@ -344,7 +344,7 @@ div._1emja3f9:has(#voiceflow-chat) {
   align-items: flex-end !important;
 }
 
-/* Launcher Button in opened state - SIZE 42x42 - CORRECTED COLOR */
+/* Launcher Button in opened state - SIZE 42x42 - CORRECTED COLOR & ALIGNMENT */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]),
 div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
   width: 42px !important;
@@ -363,7 +363,7 @@ div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
   justify-content: center !important; /* Ensure centering */
   padding: 0 !important; /* Reset padding */
   margin-top: 15px !important; /* Spacing from chat window */
-  margin-right: 15px !important; /* Spacing from edge */
+  margin-right: 20px !important; /* Align with chat window (was 15px) */
   margin-bottom: 15px !important; /* Spacing from bottom */
   position: relative !important; /* Override fixed position from closed state */
   bottom: auto !important;
@@ -373,29 +373,34 @@ div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
 
 /* Container for svg in opened state - ENSURE CENTERING */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
-  width: 42px !important;
-  height: 42px !important;
+  width: 42px !important; /* Match button size */
+  height: 42px !important; /* Match button size */
   min-width: 42px !important;
   min-height: 42px !important;
   max-width: 42px !important;
   max-height: 42px !important;
-  display: flex !important; /* Ensure centering */
-  align-items: center !important; /* Ensure centering */
-  justify-content: center !important; /* Ensure centering */
+  display: flex !important; /* Use flex to center SVG */
+  align-items: center !important; /* Vertical centering */
+  justify-content: center !important; /* Horizontal centering */
   background-color: transparent !important; /* Ensure transparent background */
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
+  overflow: hidden !important; /* Clip anything overflowing, just in case */
 }
 
-/* Arrow icon SVG in opened state launcher - SIZE 21x21 - CORRECTED COLOR */
+/* Arrow icon SVG in opened state launcher - SIZE 21x21 - CORRECTED COLOR & CENTERING */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
   width: 21px !important; /* Proportional size from reference */
   height: 21px !important;
+  min-width: 21px !important; /* Ensure minimum size */
+  min-height: 21px !important; /* Ensure minimum size */
   transform: none !important;
   object-fit: contain !important;
   fill: white !important; /* CORRECTED fill color for contrast */
+  display: block !important; /* Remove potential inline spacing */
+  margin: 0 !important; /* Remove any potential default margin */
 }
 
 /* Override path fill for the arrow icon specifically if needed */

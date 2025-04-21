@@ -409,6 +409,7 @@ div._6r9xee3.o231sh1 > * {
 }
 
 /* Language selection / Action buttons styling */
+/*
 .vfrc-system-response--actions_1ddzqsn5 button,
 div[class*="vfrc-system-response--actions"] button,
 button[variant="inline"].vfrc-button._1ytjivy0,
@@ -431,8 +432,10 @@ button[class*="vfrc-button"][variant="inline"] {
   transition: all 0.2s ease !important;
   white-space: normal !important;
 }
+*/
 
 /* Action Button text content styling */
+/*
 .vfrc-system-response--actions_1ddzqsn5 button span,
 div[class*="vfrc-system-response--actions"] button span,
 button[variant="inline"].vfrc-button._1ytjivy0 span,
@@ -453,8 +456,10 @@ button[class*="vfrc-button"][variant="inline"] div {
   overflow-wrap: break-word !important;
   line-height: 1.2 !important;
 }
+*/
 
 /* Action Button hover and active states */
+/*
 .vfrc-system-response--actions_1ddzqsn5 button:hover,
 div[class*="vfrc-system-response--actions"] button:hover,
 button[variant="inline"].vfrc-button._1ytjivy0:hover,
@@ -472,8 +477,10 @@ button[class*="vfrc-button"][variant="inline"]:active {
   color: #FFFFFF !important;
   transition: all 0.2s ease !important;
 }
+*/
 
 /* Ensure text color changes on hover/active for all button children */
+/*
 .vfrc-system-response--actions_1ddzqsn5 button:hover *,
 div[class*="vfrc-system-response--actions"] button:hover *,
 button[variant="inline"].vfrc-button._1ytjivy0:hover *,
@@ -487,6 +494,7 @@ button[variant="inline"].vfrc-button._1ytjivy0:active * {
   word-break: normal !important;
   overflow-wrap: break-word !important;
 }
+*/
 
 /* Chat window border */
 .vfrc-chat {
@@ -529,3 +537,13 @@ div[class*="_1q5q0m12"],
 .vfrc-header.jyiuei2 {
   background-color: #FFFFFF !important;
 }
+
+/* Set color for the icon container */
+/* .vfrc-icon { */
+/*   color: #b98004 !important; */
+/* } */
+
+/* Ensure the SVG inside inherits the color */
+/* .vfrc-icon svg { */
+/*   fill: currentColor !important; */
+/* } */

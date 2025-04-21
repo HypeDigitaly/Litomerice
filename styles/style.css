@@ -24,7 +24,7 @@ div.f6dof87.f6dof89 {
   position: fixed !important;
   z-index: 9999 !important;
 }
-
+++
 /* CLOSED STATE - specific positioning */
 ._1emja3f9:has(img[alt="open chat"]),
 ._1emja3f9:not(:has(#voiceflow-chat)) {

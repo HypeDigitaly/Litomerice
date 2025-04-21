@@ -529,13 +529,3 @@ div[class*="_1q5q0m12"],
 .vfrc-header.jyiuei2 {
   background-color: #FFFFFF !important;
 }
-
-/* Set color for the icon container */
-.vfrc-icon {
-  color: #b98004 !important;
-}
-
-/* Ensure the SVG inside inherits the color */
-.vfrc-icon svg {
-  fill: currentColor !important;
-}

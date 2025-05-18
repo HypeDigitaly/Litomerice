@@ -544,15 +544,67 @@ div[class*="_1q5q0m12"],
  } 
 
 /* Ensure the SVG inside inherits the color */
- .vfrc-icon svg {
+.vfrc-icon svg {
    fill: currentColor !important;
  } 
 
 /* Force microphone icon to stay visible in ._1gdvh9tc state */
 ._1gdvh9tc .vfrc-icon,
-._1gdvh9tc button[title*="microphone"] {
+._1gdvh9tc button[title*="microphone"],
+._1gdvh9tc svg[viewBox="0 0 24 24"],
+._1gdvh9tc svg[aria-label*="microphone"],
+._1gdvh9tc svg[class*="microphone"],
+._1gdvh9tc .vfrc-icon svg,
+._1gdvh9tc button[title*="microphone"] svg,
+._1gdvh9tc .vfrc-icon-container,
+._1gdvh9tc .vfrc-icon-wrapper {
   display: flex !important;
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+}
+
+/* Ensure the icon container stays visible */
+._1gdvh9tc .vfrc-icon-container,
+._1gdvh9tc .vfrc-icon-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ensure the button containing the icon stays visible */
+._1gdvh9tc button[title*="microphone"],
+._1gdvh9tc button[aria-label*="microphone"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative !important;
+  z-index: 1 !important;
+  cursor: pointer !important;
 }

@@ -547,3 +547,12 @@ div[class*="_1q5q0m12"],
  .vfrc-icon svg {
    fill: currentColor !important;
  } 
+
+/* Force microphone icon to stay visible in ._1gdvh9tc state */
+._1gdvh9tc .vfrc-icon,
+._1gdvh9tc button[title*="microphone"] {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}

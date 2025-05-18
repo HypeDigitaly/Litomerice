@@ -608,3 +608,29 @@ div[class*="_1q5q0m12"],
   z-index: 1 !important;
   cursor: pointer !important;
 }
+
+/* Force microphone button and icon to stay visible and accessible */
+button._1gdvh9tc {
+  opacity: 1 !important;
+  width: 32px !important; 
+  height: 32px !important;  
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: none !important;
+  overflow: visible !important;
+}
+
+button._1gdvh9tc .vfrc-icon {
+  opacity: 1 !important;
+  display: flex !important;
+  width: 24px !important;
+  height: 24px !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+}

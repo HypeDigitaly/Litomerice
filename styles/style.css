@@ -9,6 +9,7 @@
 /* === LAUNCHER - CLOSED STATE (title="Open chat agent") === */
 .vfrc-launcher[title="Open chat agent"] {
   background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
   width: 100px !important;
   height: 100px !important;
@@ -18,7 +19,7 @@
   max-height: 100px !important;
   padding: 0 !important;
   border-radius: 50% !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: none !important;
   cursor: pointer !important;
   overflow: visible !important;
 }
@@ -32,6 +33,7 @@
   align-items: center !important;
   justify-content: center !important;
   background: transparent !important;
+  background-color: transparent !important;
 }
 
 .vfrc-launcher[title="Open chat agent"] .vfrc-launcher__chevron {
@@ -46,11 +48,19 @@
   border-radius: 50% !important;
   object-fit: cover !important;
   display: block !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 .vfrc-launcher[title="Open chat agent"]:hover .vfrc-launcher--media-icon {
   transform: scale(1.02) !important;
   transition: transform 0.2s ease !important;
+}
+
+/* Ensure all nested elements in closed launcher are transparent */
+.vfrc-launcher[title="Open chat agent"] *:not(.vfrc-launcher--media-icon) {
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 /* === LAUNCHER - OPENED STATE (title="Close chat agent") === */
@@ -114,6 +124,7 @@
 .vfrc-chat__container {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
   overflow: hidden !important;
+  border: 2px solid #b98004 !important;
 }
 
 /* === HEADER === */
@@ -314,11 +325,6 @@
 }
 
 /* === LITOMERICE-SPECIFIC EXTRAS === */
-
-/* Chat window border */
-.vfrc-chat {
-  border: 2px solid #b98004 !important;
-}
 
 /* Icon color styling */
 .vfrc-icon {

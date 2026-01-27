@@ -125,6 +125,24 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
   overflow: hidden !important;
   border: 2px solid #b98004 !important;
+  z-index: 10000 !important; /* Higher than launcher to prevent overlap */
+}
+
+/* === MOBILE Z-INDEX FIX === */
+/* On mobile, ensure the chat widget is above the launcher button */
+@media (max-width: 768px) {
+  .vfrc-chat__container {
+    z-index: 10001 !important;
+  }
+
+  /* Lower launcher z-index when widget is open (close button visible) */
+  .vfrc-launcher[title="Close chat agent"] {
+    z-index: 9998 !important;
+  }
+
+  .vfrc-launcher__container:has(.vfrc-launcher[title="Close chat agent"]) {
+    z-index: 9998 !important;
+  }
 }
 
 /* === HEADER === */
@@ -349,6 +367,54 @@
 .vfrc-proactive-message > * {
   position: relative;
   z-index: 1;
+}
+
+/* Hide proactive message when chat is open */
+.vfrc-launcher[title="Close chat agent"] ~ .vfrc-proactive-message,
+.vfrc-chat__container ~ .vfrc-proactive-message__container,
+.vfrc-widget--chat-open .vfrc-proactive-message,
+.vfrc-widget--chat-open .vfrc-proactive-message__container {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* === PROACTIVE CARDS (Updated selector for current Voiceflow widget) === */
+/* Voiceflow uses class "vfrc-proactive__cards" with underscore, not "vfrc-proactive-message" */
+
+/* Proactive cards styling */
+div[class*="vfrc-proactive__cards"] {
+  position: relative !important;
+  z-index: 0 !important;
+  border-radius: 10px !important;
+  background-color: #A99456 !important;
+  color: #1a1e23 !important;
+  opacity: 1 !important;
+  transform-origin: center center !important;
+}
+
+div[class*="vfrc-proactive__cards"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide proactive cards when chat is open */
+.vfrc-launcher[title="Close chat agent"] ~ div[class*="vfrc-proactive__cards"],
+.vfrc-chat__container ~ div[class*="vfrc-proactive__cards"],
+.vfrc-widget--chat-open div[class*="vfrc-proactive__cards"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Hide entire proactive container when chat is open */
+.vfrc-launcher[title="Close chat agent"] ~ div.vfrc-proactive,
+.vfrc-launcher[title="Close chat agent"] ~ div[class*="vfrc-proactive "],
+.vfrc-widget--chat-open div.vfrc-proactive,
+.vfrc-widget--chat-open div[class*="vfrc-proactive "] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /* Czech button text replacements */
